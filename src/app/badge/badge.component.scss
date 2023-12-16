@@ -1,0 +1,184 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.demo-section+.demo-section {
+    margin-top: 16px;
+}
+
+/*===========================================================================
+                                Global Badge CSS
+===========================================================================*/
+// .mat-badge-content {
+//     position: absolute;
+//     text-align: center;
+//     display: inline-block;
+//     border-radius: 5px;
+//     transition: transform 200ms ease-in-out;
+//     transform: scale(0.5);
+//     overflow: hidden;
+//     white-space: nowrap;
+//     text-overflow: ellipsis;
+//     pointer-events: none;
+//     font-family: Roboto, sans-serif;
+//     font-size: 12px;
+//     font-weight: 600;
+//     --mat-badge-text-color: #ffff00 !important; // change badge text color
+//     --mat-badge-background-color: rgb(149, 15, 37) !important; // change badge background color
+//     --mat-badge-text-size: 12px; // change badhe text label font-size
+//     --mat-badge-text-weight: 600; // change badge label text font-weight
+//     --mat-badge-text-font: Roboto, sans-serif; // change badge text label font-family
+//     animation: leaves 0.5s ease-in-out infinite alternate; // for badge pop-up animation
+// }
+
+// @keyframes leaves {
+//     0% {
+//         transform: scale(1.0);
+//     }
+
+//     100% {
+//         transform: scale(1.5);
+//     }
+
+//     0% {
+//         transform: scale(1.0);
+//     }
+// }
+
+/*===========================================================================
+                    small, medium & large badge Font size
+===========================================================================*/
+.mat-badge-small .mat-badge-content {
+    width: 20px !important;
+    height: 20px !important;
+    line-height: 21px !important;
+    font-size: 16px !important;
+    font-weight: 300;
+    --mat-badge-text-color: #ffff00 !important;
+    --mat-badge-background-color: rgb(149, 15, 37) !important;
+}
+
+.mat-badge-medium .mat-badge-content {
+    width: 24px !important;
+    height: 24px !important;
+    line-height: 25px !important;
+    font-size: 19px !important;
+    font-weight: 400;
+    --mat-badge-text-color: #ffffff !important;
+    --mat-badge-background-color: #cc00ff !important;
+}
+
+.mat-badge-large .mat-badge-content {
+    width: 28px !important;
+    height: 28px !important;
+    line-height: 28px !important;
+    font-size: 24px !important;
+    font-weight: 500;
+    --mat-badge-text-color: #ff0000 !important;
+    --mat-badge-background-color: rgb(0, 169, 182) !important;
+}
+
+/*===========================================================================
+                    Button Badge Overlaping position
+===========================================================================*/
+::ng-deep .mat-badge-small.mat-badge-below .mat-badge-content {
+    bottom: -23px !important;
+}
+
+::ng-deep .mat-badge-small.mat-badge-before .mat-badge-content {
+    left: -25px !important;
+}
+
+::ng-deep .mat-badge-small.mat-badge-after .mat-badge-content {
+    right: -16px !important;
+}
+
+
+
+::ng-deep .mat-badge-medium.mat-badge-below .mat-badge-content {
+    bottom: -23px !important;
+}
+
+::ng-deep .mat-badge-medium.mat-badge-before .mat-badge-content {
+    left: -30px !important;
+}
+
+::ng-deep .mat-badge-medium.mat-badge-after .mat-badge-content {
+    right: -22px !important;
+}
+
+
+
+::ng-deep .mat-badge-large.mat-badge-below .mat-badge-content {
+    bottom: -23px !important;
+}
+
+::ng-deep .mat-badge-large.mat-badge-before .mat-badge-content {
+    left: -33px !important;
+}
+
+::ng-deep .mat-badge-large.mat-badge-after .mat-badge-content {
+    right: -28px !important;
+}
+
+
+/*===========================================================================
+                    Change Badge background & Text color
+===========================================================================*/
+::ng-deep .mat-badge-accent .mat-badge-content {
+    --mat-badge-background-color: #ffbf00;
+    --mat-badge-text-color: #000;
+    border-radius: 5px !important;
+}
+
+::ng-deep .mat-badge-warn .mat-badge-content {
+    --mat-badge-background-color: #12b803;
+    --mat-badge-text-color: #fff;
+    border-radius: 5px !important;
+}
+
+::ng-deep .mat-badge-primary .mat-badge-content {
+    --mat-badge-background-color: #27b0ff;
+    --mat-badge-text-color: #fff;
+    border-radius: 5px !important;
+}
+
+/*-------------- Badge Animation ---------------*/
+::ng-deep .ng-animate-disabled .mat-badge-content,
+::ng-deep .mat-badge-content._mat-animation-noopable {
+    transition: transform 1000ms ease-in-out;
+}
+
+::ng-deep .mat-badge-content.mat-badge-active {
+    transform: none;
+    animation: leaves 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes leaves {
+    0% {
+        transform: scale(1.0);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+
+    0% {
+        transform: scale(1.0);
+    }
+}
+
+
+/*---------- disabled badge -----------*/
+::ng-deep .mat-badge-disabled .mat-badge-content {
+    --mat-badge-disabled-state-background-color: #888888;
+    --mat-badge-disabled-state-text-color: rgba(255, 255, 255, 0.38);
+}
+
+/*---------- cdk badge -----------*/
+::ng-deep .cdk-high-contrast-active .mat-badge-content {
+    outline: solid 1px;
+    border-radius: 0;
+}

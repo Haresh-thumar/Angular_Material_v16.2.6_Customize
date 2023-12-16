@@ -1,0 +1,80 @@
+<h1>Mat-Badge Customize</h1>
+<br><br>
+<!--=====================================================================================================
+                                            SM, MD & LG Badge
+======================================================================================================-->
+<!-------------- sm Bagde Background & color change --------------->
+<div matBadge="3" matBadgeOverlap="true" matBadgeSize="small" matBadgePosition="before"> Small Bagde Background & color
+    change </div>
+<br>
+<div matBadge="3" matBadgeOverlap="true" matBadgeSize="medium" matBadgePosition="before"> Medium Bagde Background &
+    color change</div>
+<br>
+<div matBadge="3" matBadgeOverlap="true" matBadgeSize="large" matBadgePosition="before"> Large Bagde Background & color
+    change </div>
+<br><br><br>
+<!-------------- md Bagde Background & color change --------------->
+<div matBadge="5" matBadgeOverlap="true" matBadgeSize="small" matBadgePosition="after">Small Bagde Background & color
+    change</div>
+<br>
+<div matBadge="5" matBadgeOverlap="true" matBadgeSize="medium" matBadgePosition="after">Medium Bagde Background & color
+    change</div>
+<br>
+<div matBadge="5" matBadgeOverlap="true" matBadgeSize="large" matBadgePosition="after">Large Bagde Background & color
+    change</div>
+<br><br><br>
+<!-------------- lg Bagde Background & color change --------------->
+<div matBadge="7" matBadgeOverlap="true" matBadgeSize="small" matBadgePosition="below">Small Bagde Background & color
+    change</div>
+<br>
+<div matBadge="7" matBadgeOverlap="true" matBadgeSize="medium" matBadgePosition="below">Medium Bagde Background & color
+    change</div>
+<br>
+<div matBadge="7" matBadgeOverlap="true" matBadgeSize="large" matBadgePosition="below">Large Bagde Background & color
+    change</div>
+<br><br><br>
+<!--=====================================================================================================
+                                    Change Badge background & Text color
+======================================================================================================-->
+<div> Badge Button background color <button mat-raised-button color="primary" matBadge="8"
+        matBadgePosition="after" matBadgeColor="accent"> accent Badge </button>
+</div>
+<br><br>
+<div> Badge Button background color <button mat-raised-button color="primary" matBadge="8"
+        matBadgePosition="after" matBadgeColor="warn"> warn Badge </button>
+</div>
+<br><br>
+<div> Badge Button background color <button mat-raised-button color="primary" matBadge="8"
+        matBadgePosition="after" matBadgeColor="primary"> primary Badge </button>
+</div>
+<br><br><br><br>
+<!--=====================================================================================================
+                                        Button Badge position
+======================================================================================================-->
+<div> Badge Before Position <button mat-raised-button color="primary" matBadge="8"
+        matBadgePosition="before" matBadgeColor="accent"> before </button>
+</div>
+<br><br>
+<div> Badge After Position <button mat-raised-button color="primary" matBadge="8"
+        matBadgePosition="after" matBadgeColor="accent"> after </button>
+</div>
+<br><br>
+<div> Badge Below Position <button mat-raised-button color="primary" matBadge="8"
+        matBadgePosition="below" matBadgeColor="accent"> below </button>
+</div>
+<br><br><br><br>
+<!--=====================================================================================================
+                                    Toggle Hode & Show Badge
+======================================================================================================-->
+<div> Button toggles badge visibility <button mat-raised-button matBadge="7"
+        [matBadgeHidden]="hidden" (click)="toggleBadgeVisibility()"
+        matBadgeColor="warn"> Hide </button>
+</div>
+<br><br><br>
+<!--=====================================================================================================
+                                        Disable Badge
+======================================================================================================-->
+<div> Disable Badge <button mat-raised-button color="warn" matBadge="8"
+        matBadgePosition="after" matBadgeColor="warn" matBadgeDisabled="true"> accent Badge </button>
+</div>
+<br><br><br>

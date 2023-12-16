@@ -1,0 +1,95 @@
+.main-navbar {
+    width: 100%;
+    background: #dd0031;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.dynamic-nav {
+    display: inline-flex;
+    padding: 15px 15px 15px 0px;
+    margin: 0;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+
+.dynamic-nav li {
+    list-style: none;
+    cursor: pointer;
+    margin-left: 0;
+}
+
+.dynamic-nav li:hover a {
+    background: #ffdd00;
+    padding: 15px 15px 15px 15px;
+    color: rgb(0, 0, 0) !important;
+}
+
+.dynamic-nav li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 15px 15px 15px;
+}
+
+.dynamic-nav li a:hover {
+    text-decoration: none;
+}
+
+.outlet-container {
+    margin: 20px 15px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}
+
+
+
+/*------------ file upload ui -------------*/
+.drag-file-input {
+    display: none;
+}
+
+.file-upload-input {
+    display: block;
+    position: relative;
+    background-color: #bcd5ff;
+    border: 2px dashed #004fcd;
+    border-radius: 10px;
+    font-size: 1.12em;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 0.31em;
+    cursor: pointer;
+}
+
+.attach-file-icon {
+    font-size: 40px;
+    color: #004fcd;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #86b4ff;
+}
+
+.file-upload-input h6 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #004fcd;
+}
+
+.file-upload-input p {
+    font-size: 18px;
+    color: #004fcd;
+    font-weight: 500;
+}
