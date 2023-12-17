@@ -1,0 +1,301 @@
+.box-group {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.box-group>div {
+    border: 1px solid silver;
+    margin: 10px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 0 0 10px 0;
+}
+
+.box-group>div>p:first-child {
+    color: white;
+    padding: 10px 0;
+    font-size: 16px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    background-color: rgb(73, 109, 255);
+}
+
+
+
+/*===============================================================================================
+                                    Primary Button Toggle
+===============================================================================================*/
+/*------------ Full Toggle Box ------------*/
+.primary-button-toggle .mat-button-toggle-appearance-standard {
+    color: rgb(69, 123, 240);
+    background: #a3c1e9;
+}
+
+/*------------ After Focus Toggle Box items ------------*/
+.primary-button-toggle .mat-button-toggle-checked {
+    background-color: rgb(69, 123, 240);
+    color: rgb(255, 255, 255) !important;
+}
+
+/*------------ After Focus Toggle Box items Text ------------*/
+.primary-button-toggle .mat-button-toggle-checked.mat-button-toggle-appearance-standard {
+    color: rgba(221, 77, 77, 0.87);
+}
+
+/*------------ Toggle Box items left border ------------*/
+.primary-button-toggle.mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle {
+    border-left: solid 3px rgb(69, 123, 240);
+}
+
+/*------------ Toggle Box items line height ------------*/
+::ng-deep .primary-button-toggle .mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
+    line-height: 30px;
+    padding: 5px 20px !important;
+}
+
+/*------------ Toggle Box items font ------------*/
+.primary-button-toggle .mat-button-toggle {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+}
+
+/*============================= Vertical Button toggle =============================*/
+.primary-button-toggle.mat-button-toggle-group-appearance-standard.mat-button-toggle-vertical .mat-button-toggle+.mat-button-toggle {
+    border-left: none;
+    border-right: none;
+    border-top: solid 3px rgb(69, 123, 240);
+}
+
+/*============================= rtl Button toggle =============================*/
+[dir=rtl].primary-button-toggle.mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle {
+    border-left: none;
+    border-right: solid 3px rgb(69, 123, 240);
+}
+
+/*===============================================================================================
+                                    Accent Button Toggle
+===============================================================================================*/
+/*------------ Full Toggle Box ------------*/
+.accent-button-toggle .mat-button-toggle-appearance-standard {
+    color: #cf0042;
+    background: #ffaac5;
+}
+
+/*------------ After Focus Toggle Box items ------------*/
+.accent-button-toggle .mat-button-toggle-checked {
+    background-color: #cf0042;
+    color: #ffffff !important;
+}
+
+/*------------ After Focus Toggle Box items Text ------------*/
+.accent-button-toggle .mat-button-toggle-checked.mat-button-toggle-appearance-standard {
+    color: #ffa3a3;
+}
+
+/*------------ Toggle Box items left border ------------*/
+.accent-button-toggle.mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle {
+    border-left: solid 3px #ff276b;
+}
+
+/*------------ Toggle Box items line height ------------*/
+::ng-deep .accent-button-toggle .mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
+    line-height: 40px;
+    padding: 0 30px !important;
+}
+
+/*------------ Toggle Box items font ------------*/
+.accent-button-toggle .mat-button-toggle {
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+}
+
+/*============================= Vertical Button toggle =============================*/
+.accent-button-toggle.mat-button-toggle-group-appearance-standard.mat-button-toggle-vertical .mat-button-toggle+.mat-button-toggle {
+    border-left: none;
+    border-right: none;
+    border-top: solid 3px #ff276b;
+}
+
+/*============================= rtl Button toggle =============================*/
+[dir=rtl].accent-button-toggle.mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle {
+    border-left: none;
+    border-right: solid 3px #ff276b;
+}
+
+/*===============================================================================================
+                                    Warn Button Toggle
+===============================================================================================*/
+/*------------ Full Toggle Box ------------*/
+.warn-button-toggle .mat-button-toggle-appearance-standard {
+    color: #ff1100;
+    background: #ffb0aa;
+}
+
+/*------------ After Focus Toggle Box items ------------*/
+.warn-button-toggle .mat-button-toggle-checked {
+    background-color: #ff1100;
+    color: #fff !important;
+}
+
+/*------------ After Focus Toggle Box items Text ------------*/
+.warn-button-toggle .mat-button-toggle-checked.mat-button-toggle-appearance-standard {
+    color: #f44336;
+}
+
+/*------------ Toggle Box items left border ------------*/
+.warn-button-toggle.mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle {
+    border-left: solid 3px #fc9189;
+}
+
+/*------------ Toggle Box items line height ------------*/
+::ng-deep .warn-button-toggle .mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
+    line-height: 45px;
+    padding: 0 35px !important;
+}
+
+/*------------ Toggle Box items font ------------*/
+.warn-button-toggle .mat-button-toggle {
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+}
+
+/*============================= Vertical Button toggle =============================*/
+.warn-button-toggle.mat-button-toggle-group-appearance-standard.mat-button-toggle-vertical .mat-button-toggle+.mat-button-toggle {
+    border-left: none;
+    border-right: none;
+    border-top: solid 3px #fc9189;
+}
+
+/*============================= rtl Button toggle =============================*/
+[dir=rtl].warn-button-toggle.mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle {
+    border-left: none;
+    border-right: solid 3px #fc9189;
+}
+
+
+
+
+/*===============================================================================================
+                                    Secondary Button Toggle
+===============================================================================================*/
+/*------------ Full Toggle Box ------------*/
+.secondary-button-toggle .mat-button-toggle-appearance-standard {
+    color: #545454;
+    background: #c6c6c6;
+}
+
+/*------------ After Focus Toggle Box items ------------*/
+.secondary-button-toggle .mat-button-toggle-checked {
+    background-color: #545454;
+    color: #ffffff !important;
+}
+
+/*------------ After Focus Toggle Box items Text ------------*/
+.secondary-button-toggle .mat-button-toggle-checked.mat-button-toggle-appearance-standard {
+    color: #000000;
+}
+
+/*------------ Toggle Box items left border ------------*/
+.secondary-button-toggle.mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle {
+    border-left: solid 3px #6e6e6e;
+}
+
+/*------------ Toggle Box items line height ------------*/
+::ng-deep .secondary-button-toggle .mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
+    line-height: 50px;
+    padding: 0 40px !important;
+}
+
+/*------------ Toggle Box items font ------------*/
+.secondary-button-toggle .mat-button-toggle {
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+}
+
+/*============================= Vertical Button toggle =============================*/
+.secondary-button-toggle.mat-button-toggle-group-appearance-standard.mat-button-toggle-vertical .mat-button-toggle+.mat-button-toggle {
+    border-left: none;
+    border-right: none;
+    border-top: solid 3px #6e6e6e;
+}
+
+/*============================= rtl Button toggle =============================*/
+[dir=rtl].secondary-button-toggle.mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle {
+    border-left: none;
+    border-right: solid 3px #6e6e6e;
+}
+
+
+/*===============================================================================================
+                                    Warning Button Toggle
+===============================================================================================*/
+/*------------ Full Toggle Box ------------*/
+.warning-button-toggle .mat-button-toggle-appearance-standard {
+    color: #ffaf01;
+    background: #ffe5ac;
+}
+
+/*------------ After Focus Toggle Box items ------------*/
+.warning-button-toggle .mat-button-toggle-checked {
+    background-color: #ffaf01;
+    color: #fff !important;
+}
+
+/*------------ After Focus Toggle Box items Text ------------*/
+.warning-button-toggle .mat-button-toggle-checked.mat-button-toggle-appearance-standard {
+    color: #c4a7a7;
+}
+
+/*------------ Toggle Box items left border ------------*/
+.warning-button-toggle.mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle {
+    border-left: solid 3px #ffaf01;
+}
+
+/*------------ Toggle Box items line height ------------*/
+::ng-deep .warning-button-toggle .mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
+    line-height: 55px;
+    padding: 0 35px !important;
+}
+
+/*------------ Toggle Box items font ------------*/
+.warning-button-toggle .mat-button-toggle {
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+}
+
+/*============================= Vertical Button toggle =============================*/
+.warning-button-toggle.mat-button-toggle-group-appearance-standard.mat-button-toggle-vertical .mat-button-toggle+.mat-button-toggle {
+    border-left: none;
+    border-right: none;
+    border-top: solid 3px #ffaf01;
+}
+
+/*============================= rtl Button toggle =============================*/
+[dir=rtl].warning-button-toggle.mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle {
+    border-left: none;
+    border-right: solid 3px #ffaf01;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------
+                                                Legacy Toggle
+-----------------------------------------------------------------------------------------------------------*/
+::ng-deep .mat-button-toggle {
+    --mat-legacy-button-toggle-text-color: rgb(255, 0, 0) !important;
+    --mat-legacy-button-toggle-text-font: 'Titillium Web', sans-serif !important;
+    --mat-legacy-button-toggle-state-layer-color: rgba(0, 239, 52, 0.649) !important;
+    --mat-legacy-button-toggle-selected-state-text-color: rgb(72, 0, 255) !important;
+    --mat-legacy-button-toggle-selected-state-background-color: rgb(172, 139, 255) !important;
+    --mat-legacy-button-toggle-disabled-state-text-color: rgba(0, 0, 0, 0.26);
+    --mat-legacy-button-toggle-disabled-state-background-color: #eeeeee;
+    --mat-legacy-button-toggle-disabled-selected-state-background-color: #bdbdbd;
+}
+
+.mat-button-toggle-standalone,
+.mat-button-toggle-group {
+    background-color: aquamarine;
+    border-radius: 20px !important;
+}
