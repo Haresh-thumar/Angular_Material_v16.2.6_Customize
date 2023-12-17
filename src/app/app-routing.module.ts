@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BadgeComponent } from './badge/badge.component';
+import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
-  // { path: 'bottom-sheet', component: BottomSheetComponent },
+  { path: 'bottom-sheet', component: BottomSheetComponent },
   // { path: 'botton-toggle', component: ButtonToggleComponent },
   // { path: 'button', component: ButtonComponent },
   // { path: 'checkbox', component: CheckboxComponent },
