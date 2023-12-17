@@ -11,6 +11,7 @@ import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatCardModule } from '@angular/material/card';
 
 
 /******************** MATERIAL COMPONENTS ********************/
@@ -18,6 +19,7 @@ import { BadgeComponent } from './badge/badge.component';
 import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
 import { ButtonComponent } from './button/button.component';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
+import { CardComponent } from './card/card.component';
 
 
 @NgModule({
@@ -27,6 +29,7 @@ import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
     BottomSheetComponent,
     ButtonComponent,
     ButtonToggleComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
     MatBottomSheetModule,
     MatListModule,
     MatIconModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

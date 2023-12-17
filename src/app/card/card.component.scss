@@ -1,0 +1,341 @@
+.card-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.example-card {
+    max-width: 25%;
+    margin: 0 10px;
+}
+
+
+/*--------------------------------------------------------------------------
+                            Card Global css
+--------------------------------------------------------------------------*/
+// ::ng-deep .mat-mdc-card {
+//     --mdc-elevated-card-container-color: rgb(255, 214, 214); // change card container color
+//     --mdc-elevated-card-container-elevation: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+//     --mdc-outlined-card-container-color: rgb(255, 0, 0) !important; // change card text color
+//     --mdc-outlined-card-outline-color: rgba(255, 0, 0, 0.12) !important;
+//     --mdc-outlined-card-container-elevation: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+//     --mat-card-title-text-font: 'Titillium Web', sans-serif !important;
+//     --mat-card-title-text-line-height: 32px;
+//     --mat-card-title-text-size: 25px;
+//     --mat-card-title-text-tracking: 0.0125em;
+//     --mat-card-title-text-weight: 600;
+//     --mat-card-subtitle-text-color: rgba(255, 0, 0, 0.54);
+//     --mat-card-subtitle-text-font: 'Titillium Web', sans-serif !important;
+//     --mat-card-subtitle-text-line-height: 22px;
+//     --mat-card-subtitle-text-size: 14px;
+//     --mat-card-subtitle-text-tracking: 0.0071428571em;
+//     --mat-card-subtitle-text-weight: 500;
+// }
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------
+                                                        Custom Theme Color-1
+---------------------------------------------------------------------------------------------------------------------------------*/
+// mat-card background color change
+.mat-mdc-card.success-card {
+    box-shadow: 8px 10px 5px -1px rgba(255, 173, 173, 0.733), 0px 1px 1px 0px rgba(255, 177, 177, 0.747), 0px 1px 3px 0px rgba(255, 148, 148, 0.829);
+    --mdc-elevated-card-container-color: #00ba4a;
+}
+
+// mat-card main title color change
+.mat-mdc-card-title.success-card-title {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Titillium Web', sans-serif !important;
+    font-size: var(--mdc-typography-headline6-font-size, 25px);
+    line-height: var(--mdc-typography-headline6-line-height, 32px);
+    font-weight: var(--mdc-typography-headline6-font-weight, 500);
+    letter-spacing: var(--mdc-typography-headline6-letter-spacing, 0.0125em);
+    text-decoration: var(--mdc-typography-headline6-text-decoration, inherit);
+    text-transform: var(--mdc-typography-headline6-text-transform, none);
+    color: #ffffff;
+}
+
+// mat-card subTitle change color
+.mat-mdc-card-subtitle.success-card-subtitle {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Titillium Web', sans-serif !important;
+    font-size: var(--mdc-typography-subtitle2-font-size, 16px);
+    line-height: var(--mdc-typography-subtitle2-line-height, 35px);
+    font-weight: var(--mdc-typography-subtitle2-font-weight, 300);
+    letter-spacing: var(--mdc-typography-subtitle2-letter-spacing, 0.0071428571em);
+    text-decoration: var(--mdc-typography-subtitle2-text-decoration, inherit);
+    text-transform: var(--mdc-typography-subtitle2-text-transform, lowercase);
+    color: #eaff00;
+}
+
+// mat-card content change
+.mat-mdc-card-content.success-card-content {
+    display: block;
+    font-size: 15px !important;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: justify;
+    color: #ffffff;
+    padding: 25px 20px;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------
+                                                        Custom Theme Color-2
+  ---------------------------------------------------------------------------------------------------------------------------------*/
+// mat-card background color change
+.mat-mdc-card.danger-card {
+    box-shadow: 8px 10px 5px -1px rgba(97, 255, 100, 0.733), 0px 1px 1px 0px rgba(97, 255, 100, 0.733), 0px 1px 3px 0px rgba(97, 255, 100, 0.733);
+    --mdc-elevated-card-container-color: #ff3a72;
+}
+
+// mat-card main title color change
+.mat-mdc-card-title.danger-card-title {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: var(--mdc-typography-headline6-font-size, 25px);
+    line-height: var(--mdc-typography-headline6-line-height, 32px);
+    font-weight: var(--mdc-typography-headline6-font-weight, 500);
+    letter-spacing: var(--mdc-typography-headline6-letter-spacing, 0.0125em);
+    text-decoration: var(--mdc-typography-headline6-text-decoration, inherit);
+    text-transform: var(--mdc-typography-headline6-text-transform, none);
+    color: #ffe100;
+}
+
+// mat-card subTitle change color
+.mat-mdc-card-subtitle.danger-card-subtitle {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: var(--mdc-typography-subtitle2-font-size, 16px);
+    line-height: var(--mdc-typography-subtitle2-line-height, 35px);
+    font-weight: var(--mdc-typography-subtitle2-font-weight, 300);
+    letter-spacing: var(--mdc-typography-subtitle2-letter-spacing, 0.0071428571em);
+    text-decoration: var(--mdc-typography-subtitle2-text-decoration, inherit);
+    text-transform: var(--mdc-typography-subtitle2-text-transform, lowercase);
+    color: #ffffff;
+}
+
+// mat-card content change
+.mat-mdc-card-content.danger-card-content {
+    display: block;
+    font-size: 15px !important;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: justify;
+    color: rgb(251, 255, 0);
+    padding: 25px 20px;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------
+                                                        Custom Theme Color-3
+  ---------------------------------------------------------------------------------------------------------------------------------*/
+// mat-card background color change
+.mat-mdc-card.warning-card {
+    box-shadow: 8px 10px 5px -1px rgba(95, 162, 255, 0.733), 0px 1px 1px 0px rgba(95, 162, 255, 0.747), 0px 1px 3px 0px rgba(95, 162, 255, 0.829);
+    --mdc-elevated-card-container-color: #ffff0b;
+}
+
+// mat-card main title color change
+.mat-mdc-card-title.warning-card-title {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: var(--mdc-typography-headline6-font-size, 25px);
+    line-height: var(--mdc-typography-headline6-line-height, 32px);
+    font-weight: var(--mdc-typography-headline6-font-weight, 500);
+    letter-spacing: var(--mdc-typography-headline6-letter-spacing, 0.0125em);
+    text-decoration: var(--mdc-typography-headline6-text-decoration, inherit);
+    text-transform: var(--mdc-typography-headline6-text-transform, none);
+    color: #ef000c;
+}
+
+// mat-card subTitle change color
+.mat-mdc-card-subtitle.warning-card-subtitle {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: var(--mdc-typography-subtitle2-font-size, 16px);
+    line-height: var(--mdc-typography-subtitle2-line-height, 35px);
+    font-weight: var(--mdc-typography-subtitle2-font-weight, 300);
+    letter-spacing: var(--mdc-typography-subtitle2-letter-spacing, 0.0071428571em);
+    text-decoration: var(--mdc-typography-subtitle2-text-decoration, inherit);
+    text-transform: var(--mdc-typography-subtitle2-text-transform, lowercase);
+    color: #d000ff;
+}
+
+// mat-card content change
+.mat-mdc-card-content.warning-card-content {
+    display: block;
+    font-size: 15px !important;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: justify;
+    color: #0228ff;
+    padding: 25px 20px;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------
+                                                        Custom Theme Color-4
+  ---------------------------------------------------------------------------------------------------------------------------------*/
+// mat-card background color change
+.mat-mdc-card.primary-card {
+    box-shadow: 8px 10px 5px -1px rgba(255, 133, 133, 0.733), 0px 1px 1px 0px rgba(255, 133, 133.747), 0px 1px 3px 0px rgba(255, 133, 133.829);
+    --mdc-elevated-card-container-color: #428cfc;
+}
+
+// mat-card main title color change
+.mat-mdc-card-title.primary-card-title {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: var(--mdc-typography-headline6-font-size, 25px);
+    line-height: var(--mdc-typography-headline6-line-height, 32px);
+    font-weight: var(--mdc-typography-headline6-font-weight, 500);
+    letter-spacing: var(--mdc-typography-headline6-letter-spacing, 0.0125em);
+    text-decoration: var(--mdc-typography-headline6-text-decoration, inherit);
+    text-transform: var(--mdc-typography-headline6-text-transform, none);
+    color: #005ae1;
+}
+
+// mat-card subTitle change color
+.mat-mdc-card-subtitle.primary-card-subtitle {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: var(--mdc-typography-subtitle2-font-size, 16px);
+    line-height: var(--mdc-typography-subtitle2-line-height, 35px);
+    font-weight: var(--mdc-typography-subtitle2-font-weight, 300);
+    letter-spacing: var(--mdc-typography-subtitle2-letter-spacing, 0.0071428571em);
+    text-decoration: var(--mdc-typography-subtitle2-text-decoration, inherit);
+    text-transform: var(--mdc-typography-subtitle2-text-transform, lowercase);
+    color: #ffffff;
+}
+
+// mat-card content change
+.mat-mdc-card-content.primary-card-content {
+    display: block;
+    font-size: 15px !important;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: justify;
+    color: #ffffff;
+    padding: 25px 20px;
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------
+                                                            Avatar Card
+  ---------------------------------------------------------------------------------------------------------------------------------*/
+// mat-Avatar Card Background
+.avatar-card {
+    box-shadow: 8px 10px 5px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.22),
+        0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    --mdc-elevated-card-container-color: #cde1ff;
+    border: 1px solid red;
+    border-radius: 15px;
+}
+
+// mat-avatar-card Profile Image
+.example-header-image {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS64kkXzmckwRb3fVWNOt5NFNsHK69O9O66WIyJmOiq7czlifPbqxdwaQGv2r6yS9awKYY&usqp=CAU');
+    background-size: cover;
+}
+
+// Avatar card Title
+.mat-mdc-card-title.avatar-card-title {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: var(--mdc-typography-headline6-font-size, 25px);
+    line-height: 40px;
+    font-weight: var(--mdc-typography-headline6-font-weight, 500);
+    letter-spacing: var(--mdc-typography-headline6-letter-spacing, 0.0125em);
+    text-decoration: var(--mdc-typography-headline6-text-decoration, inherit);
+    text-transform: var(--mdc-typography-headline6-text-transform, none);
+    color: #e10087;
+}
+
+// Avatar Card SubTitle
+.mat-mdc-card-subtitle.avatar-card-subtitle {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: var(--mdc-typography-subtitle2-font-size, 16px);
+    line-height: 35px !important;
+    font-weight: var(--mdc-typography-subtitle2-font-weight, 300);
+    letter-spacing: var(--mdc-typography-subtitle2-letter-spacing, 0.0071428571em);
+    text-decoration: var(--mdc-typography-subtitle2-text-decoration, inherit);
+    text-transform: var(--mdc-typography-subtitle2-text-transform, lowercase);
+    color: rgb(255, 63, 63)
+}
+
+// Avatar Card Content
+.mat-mdc-card-content.avatar-card-content {
+    display: block;
+    font-size: 15px !important;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: justify;
+    color: #3e3e3e;
+    padding: 25px 20px;
+}
+
+.card-button {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+// mat-card background color change
+.mat-mdc-card {
+    box-shadow: 8px 10px 5px -1px rgba(255, 173, 173, 0.733), 0px 1px 1px 0px rgba(255, 177, 177, 0.747), 0px 1px 3px 0px rgba(255, 148, 148, 0.829);
+    --mdc-elevated-card-container-color: #a1ffc7;
+}
+
+// mat card Title
+.mat-mdc-card-title {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: var(--mdc-typography-headline6-font-size, 25px);
+    line-height: 40px;
+    font-weight: var(--mdc-typography-headline6-font-weight, 500);
+    letter-spacing: var(--mdc-typography-headline6-letter-spacing, 0.0125em);
+    text-decoration: var(--mdc-typography-headline6-text-decoration, inherit);
+    text-transform: var(--mdc-typography-headline6-text-transform, none);
+    color: #e10087;
+}
+
+
+// Mat Card SubTitle
+.mat-mdc-card-subtitle {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: var(--mdc-typography-subtitle2-font-size, 16px);
+    line-height: 35px !important;
+    font-weight: var(--mdc-typography-subtitle2-font-weight, 300);
+    letter-spacing: var(--mdc-typography-subtitle2-letter-spacing, 0.0071428571em);
+    text-decoration: var(--mdc-typography-subtitle2-text-decoration, inherit);
+    text-transform: var(--mdc-typography-subtitle2-text-transform, lowercase);
+    color: rgb(255, 63, 63)
+}
+
+// Mat Card Content
+.mat-mdc-card-content {
+    display: block;
+    font-size: 15px !important;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: justify;
+    color: #3e3e3e;
+    padding: 25px 20px;
+}
