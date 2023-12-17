@@ -2,12 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BadgeComponent } from './badge/badge.component';
 import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
+import { ButtonComponent } from './button/button.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
   { path: 'bottom-sheet', component: BottomSheetComponent },
+  { path: 'button', component: ButtonComponent },
   // { path: 'botton-toggle', component: ButtonToggleComponent },
-  // { path: 'button', component: ButtonComponent },
   // { path: 'checkbox', component: CheckboxComponent },
   // { path: 'Chips', component: ChipComponent },
   // { path: 'card', component: CardComponent },

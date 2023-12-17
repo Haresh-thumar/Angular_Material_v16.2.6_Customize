@@ -9,11 +9,13 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatButtonModule } from '@angular/material/button';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
 
 
 /******************** MATERIAL COMPONENTS ********************/
 import { BadgeComponent } from './badge/badge.component';
 import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
+import { ButtonComponent } from './button/button.component';
 
 
 @NgModule({
@@ -21,6 +23,7 @@ import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
     AppComponent,
     BadgeComponent,
     BottomSheetComponent,
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,8 @@ import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
     MatBadgeModule,
     MatButtonModule,
     MatBottomSheetModule,
-    MatListModule
+    MatListModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
