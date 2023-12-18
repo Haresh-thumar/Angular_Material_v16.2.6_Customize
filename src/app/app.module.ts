@@ -13,6 +13,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 /******************** MATERIAL COMPONENTS ********************/
@@ -22,7 +24,8 @@ import { ButtonComponent } from './button/button.component';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 import { CardComponent } from './card/card.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ChipsComponent } from './chips/chips.component';
 
 
 @NgModule({
@@ -33,13 +36,15 @@ import { FormsModule } from '@angular/forms';
     ButtonComponent,
     ButtonToggleComponent,
     CardComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    ChipsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
     MatBadgeModule,
     MatButtonModule,
     MatBottomSheetModule,
@@ -47,7 +52,9 @@ import { FormsModule } from '@angular/forms';
     MatIconModule,
     MatButtonToggleModule,
     MatCardModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatChipsModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

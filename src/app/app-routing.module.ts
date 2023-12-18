@@ -6,6 +6,7 @@ import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
 import { ButtonComponent } from './button/button.component';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 import { CardComponent } from './card/card.component';
+import { ChipsComponent } from './chips/chips.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
@@ -14,7 +15,7 @@ const routes: Routes = [
   { path: 'botton-toggle', component: ButtonToggleComponent },
   { path: 'card', component: CardComponent },
   { path: 'checkbox', component: CheckboxComponent },
-  // { path: 'Chips', component: ChipComponent },
+  { path: 'Chips', component: ChipsComponent },
   // { path: 'date-picker', component: DatePickerComponent },
   // { path: 'dialog', component: DialogComponent },
   // { path: 'divider', component: DividerComponent },
