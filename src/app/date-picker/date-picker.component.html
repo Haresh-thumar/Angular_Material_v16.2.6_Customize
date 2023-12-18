@@ -1,0 +1,100 @@
+<h1>Mat Date-Picker Customize</h1>
+<br><br>
+<!--------------------------------------------------------------------------------------------------------------------->
+<div class="grid-box">
+    <!----------------------- Datepicker (Primary Color) ----------------------->
+    <div>
+        <h6>Datepicker (Primary Color)</h6>
+        <mat-form-field class="example-full-width" appearance="outline" color="primary">
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+    </div>
+    <!----------------------- Datepicker (Accent Color) ----------------------->
+    <div>
+        <h6>Datepicker (Accent Color)</h6>
+        <mat-form-field class="example-full-width" appearance="outline" color="accent">
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker1">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+    </div>
+    <!----------------------- Datepicker (Warn Color) ----------------------->
+    <div>
+        <h6>Datepicker (Warn Color)</h6>
+        <mat-form-field class="example-full-width" appearance="outline" color="warn">
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker2">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
+            <mat-datepicker #picker2></mat-datepicker>
+        </mat-form-field>
+    </div>
+</div>
+<br>
+<div class="grid-box">
+    <!----------------------- Datepicker with custom icon ----------------------->
+    <div>
+        <h6>Datepicker with custom icon</h6>
+        <mat-form-field class="example-full-width" appearance="fill" color="primary">
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker3">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker3">
+                <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+            </mat-datepicker-toggle>
+            <mat-datepicker #picker3></mat-datepicker>
+        </mat-form-field>
+    </div>
+    <!----------------------- Basic Date-Range ----------------------->
+    <div>
+        <h6>Basic Date-Range</h6>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Enter a date range</mat-label>
+            <mat-date-range-input [rangePicker]="picker4">
+                <input matStartDate placeholder="Start date">
+                <input matEndDate placeholder="End date">
+            </mat-date-range-input>
+            <mat-hint>MM/DD/YYYY - MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker4"></mat-datepicker-toggle>
+            <mat-date-range-picker #picker4></mat-date-range-picker>
+        </mat-form-field>
+    </div>
+    <!----------------- Date range picker comparison ranges ----------------->
+    <div>
+        <h6>Date range picker comparison ranges</h6>
+        <mat-form-field class="example-full-width">
+            <mat-label>First campaign</mat-label>
+            <mat-date-range-input
+                [formGroup]="campaignOne"
+                [rangePicker]="campaignOnePicker"
+                [comparisonStart]="campaignTwo.value.start"
+                [comparisonEnd]="campaignTwo.value.end">
+                <input matStartDate placeholder="Start date" formControlName="start">
+                <input matEndDate placeholder="End date" formControlName="end">
+            </mat-date-range-input>
+            <mat-hint>MM/DD/YYYY - MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="campaignOnePicker"></mat-datepicker-toggle>
+            <mat-date-range-picker #campaignOnePicker></mat-date-range-picker>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label>Second campaign</mat-label>
+            <mat-date-range-input
+                [formGroup]="campaignTwo"
+                [rangePicker]="campaignTwoPicker"
+                [comparisonStart]="campaignOne.value.start"
+                [comparisonEnd]="campaignOne.value.end">
+                <input matStartDate placeholder="Start date" formControlName="start">
+                <input matEndDate placeholder="End date" formControlName="end">
+            </mat-date-range-input>
+            <mat-datepicker-toggle matIconSuffix [for]="campaignTwoPicker"></mat-datepicker-toggle>
+            <mat-hint>MM/DD/YYYY - MM/DD/YYYY</mat-hint>
+            <mat-date-range-picker #campaignTwoPicker></mat-date-range-picker>
+        </mat-form-field>
+    </div>
+</div>

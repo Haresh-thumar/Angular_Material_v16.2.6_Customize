@@ -15,6 +15,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatInputModule } from '@angular/material/input';
 
 
 /******************** MATERIAL COMPONENTS ********************/
@@ -26,6 +29,7 @@ import { CardComponent } from './card/card.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChipsComponent } from './chips/chips.component';
+import { DatePickerComponent } from './date-picker/date-picker.component';
 
 
 @NgModule({
@@ -37,7 +41,8 @@ import { ChipsComponent } from './chips/chips.component';
     ButtonToggleComponent,
     CardComponent,
     CheckboxComponent,
-    ChipsComponent
+    ChipsComponent,
+    DatePickerComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +59,10 @@ import { ChipsComponent } from './chips/chips.component';
     MatCardModule,
     MatCheckboxModule,
     MatChipsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

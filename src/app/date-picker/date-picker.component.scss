@@ -1,0 +1,155 @@
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    margin: 10px;
+}
+
+.grid-box>div {
+    -webkit-box-shadow: 0px 8px 37px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 8px 37px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 8px 37px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    text-align: center;
+    border-right: 1px solid #ffacbf;
+}
+
+.grid-box>div h6 {
+    background: #ffc7d5;
+    color: #ff003c;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif !important;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+/******************************************************************************************************************
+                                            Date-Picker Global CSS
+******************************************************************************************************************/
+::ng-deep .mat-datepicker-content {
+    --mat-datepicker-calendar-container-background-color: rgb(255, 241, 198);
+    --mat-datepicker-calendar-container-text-color: rgba(0, 0, 0, 0.87);
+    --mat-datepicker-calendar-date-selected-state-text-color: #d90024 !important; // selected calender Date, Month & Year text color
+    --mat-datepicker-calendar-date-selected-state-background-color: #ffa0b0 !important; // selected calender Date, Month & Year & Background color
+    --mat-datepicker-calendar-date-today-selected-state-outline-color: rgb(253, 255, 192) !important; // change calender body background color
+    --mat-datepicker-calendar-date-hover-state-background-color: rgba(24, 208, 0, 0.992); // hover to change Date, Month & Year background color
+    --mat-datepicker-calendar-date-focus-state-background-color: rgb(255, 0, 251); // bydefault focus to change Date, Month & Year background color
+
+    --mat-datepicker-calendar-date-in-range-state-background-color: rgba(109, 131, 255, 0.946); // selected date range background color
+
+    --mat-datepicker-calendar-body-label-text-color: rgb(0, 200, 255) !important; // change selected month text color
+    --mat-datepicker-calendar-period-button-icon-color: rgb(234, 41, 255); // change triangle caret icon color
+    --mat-datepicker-calendar-navigation-button-icon-color: rgb(255, 0, 132); // change next & previous icon color
+    --mat-datepicker-calendar-header-divider-color: rgb(255, 0, 0); // change calender header divider color
+    --mat-datepicker-calendar-header-text-color: rgb(181, 108, 255); // change week text color
+    --mat-datepicker-calendar-date-today-outline-color: rgb(208, 0, 255); // change today date outline color
+    --mat-datepicker-calendar-date-text-color: rgb(255, 0, 47); // change bydefault Date, Month & Year text color
+    --mat-datepicker-calendar-date-outline-color: rgb(253, 220, 2); // change bydefault Date, Month & Year outline color
+
+    --mat-datepicker-range-input-disabled-state-separator-color: rgba(0, 0, 0, 0.38);
+    --mat-datepicker-range-input-disabled-state-text-color: rgba(0, 0, 0, 0.38);
+    --mat-datepicker-calendar-date-disabled-state-text-color: rgba(0, 0, 0, 0.38);
+    --mat-datepicker-calendar-date-today-disabled-state-outline-color: rgba(0, 0, 0, 0.18);
+    --mat-datepicker-calendar-date-selected-disabled-state-background-color: rgba(63, 81, 181, 0.4);
+}
+
+
+::ng-deep .mat-datepicker-content {
+    --mat-datepicker-calendar-text-font: 'Titillium Web', sans-serif !important;
+    --mat-datepicker-calendar-text-size: 15px; // change calender Date, Month & Year font-size
+    --mat-datepicker-calendar-body-label-text-size: 20px; // change calender Month Lable font-size
+    --mat-datepicker-calendar-body-label-text-weight: 600; // change calender Month Lable font-weight
+    --mat-datepicker-calendar-period-button-text-size: 16px; // change month & year lable font-size
+    --mat-datepicker-calendar-period-button-text-weight: 600; // change month & year lable font-weight
+    --mat-datepicker-calendar-header-text-size: 15px; // change calender header week font-size
+    --mat-datepicker-calendar-header-text-weight: 600; // change calender header week font-weight
+}
+
+::ng-deep .mat-datepicker-content.mat-accent {
+    --mat-datepicker-calendar-date-selected-state-text-color: white;
+    --mat-datepicker-calendar-date-selected-state-background-color: #ff4081;
+    --mat-datepicker-calendar-date-selected-disabled-state-background-color: rgba(255, 64, 129, 0.4);
+    --mat-datepicker-calendar-date-today-selected-state-outline-color: white;
+    --mat-datepicker-calendar-date-focus-state-background-color: rgba(255, 64, 129, 0.3);
+    --mat-datepicker-calendar-date-hover-state-background-color: rgba(255, 64, 129, 0.3);
+    --mat-datepicker-calendar-date-in-range-state-background-color: rgba(255, 64, 129, 0.2);
+    --mat-datepicker-calendar-date-in-comparison-range-state-background-color: rgba(249, 171, 0, 0.2);
+    --mat-datepicker-calendar-date-in-overlap-range-state-background-color: #a8dab5;
+    --mat-datepicker-calendar-date-in-overlap-range-selected-state-background-color: #46a35e;
+}
+
+::ng-deep .mat-datepicker-content.mat-warn {
+    --mat-datepicker-calendar-date-selected-state-text-color: white;
+    --mat-datepicker-calendar-date-selected-state-background-color: #f44336;
+    --mat-datepicker-calendar-date-selected-disabled-state-background-color: rgba(244, 67, 54, 0.4);
+    --mat-datepicker-calendar-date-today-selected-state-outline-color: white;
+    --mat-datepicker-calendar-date-focus-state-background-color: rgba(244, 67, 54, 0.3);
+    --mat-datepicker-calendar-date-hover-state-background-color: rgba(244, 67, 54, 0.3);
+    --mat-datepicker-calendar-date-in-range-state-background-color: rgba(244, 67, 54, 0.2);
+    --mat-datepicker-calendar-date-in-comparison-range-state-background-color: rgba(249, 171, 0, 0.2);
+    --mat-datepicker-calendar-date-in-overlap-range-state-background-color: #a8dab5;
+    --mat-datepicker-calendar-date-in-overlap-range-selected-state-background-color: #46a35e;
+}
+
+// focus to change date-picker icon color (accent color)
+::ng-deep .mat-datepicker-toggle-active.mat-accent {
+    --mat-datepicker-toggle-active-state-icon-color: #ff00dd !important;
+}
+
+// focus to change date-picker icon color (warn-color)
+::ng-deep .mat-datepicker-toggle-active.mat-warn {
+    --mat-datepicker-toggle-active-state-icon-color: #fa0085 !important;
+}
+
+// change next & previous icon background color
+::ng-deep .mat-calendar-controls .mat-mdc-icon-button.mat-mdc-button-base {
+    --mdc-icon-button-state-layer-size: 40px;
+    width: var(--mdc-icon-button-state-layer-size);
+    height: var(--mdc-icon-button-state-layer-size);
+    padding: 8px;
+    background-color: #ffbece;
+}
+
+// change hint text css
+::ng-deep .mat-mdc-form-field-subscript-wrapper {
+    color: #00b7ff;
+}
+
+// change next & previous icon button base background 
+::ng-deep .mat-calendar-controls .mat-mdc-icon-button.mat-mdc-button-base .mat-mdc-button-touch-target {
+    display: none !important;
+}
+
+// Change Date-Picker Calander Header Background Color
+::ng-deep .mat-calendar-header {
+    background-color: #9cff97;
+}
+
+// change calander icon css 
+::ng-deep.mdc-icon-button {
+    background-color: #a7ffc9 !important;
+}
+
+//  Change Date-Picker Calender Date Icon Color
+::ng-deep .mat-mdc-icon-button.mat-mdc-button-base {
+    color: #00b345;
+}
+
+
+// change Date-range picker comparison ranges css
+::ng-deep .mat-calendar-body-in-range {
+    --mat-datepicker-range-input-separator-color: #ffaa00 !important; // change datepicker range input separator color
+    --mat-datepicker-calendar-date-in-comparison-range-state-background-color: rgb(249, 87, 0) !important;
+    --mat-datepicker-calendar-date-in-overlap-range-state-background-color: #00ffbb !important;
+    --mat-datepicker-calendar-date-in-overlap-range-selected-state-background-color: #00ffbb !important;
+}
+
+// Calender Selected Date Focused Bg Color
+::ng-deep .cdk-keyboard-focused .mat-calendar-body-active>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical),
+::ng-deep .cdk-program-focused .mat-calendar-body-active>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical) {
+    background-color: rgb(255, 213, 0);
+}
