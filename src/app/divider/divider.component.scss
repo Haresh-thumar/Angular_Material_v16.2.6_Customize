@@ -1,0 +1,167 @@
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+}
+
+.grid-box>.column {
+    margin: 10px 20px 40px 20px;
+}
+
+h2 {
+    background-color: #ff006a;
+    padding: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    background-color: rgba(63, 181, 102, 0.478);
+    padding: 10px;
+    margin: 0 0 30px 0;
+    font-size: 16px;
+}
+
+/*-----------------------------------------------------------------------------
+                            Divider Global CSS
+-----------------------------------------------------------------------------*/
+// ::ng-deep .mat-divider {
+//     --mat-divider-width: 12px !important;
+//     --mat-divider-color: rgba(0, 0, 0, 0.12);
+//     display: block;
+//     margin: 0;
+//     border-top-style: solid; // change divider style
+//     border-top-color: var(--mat-divider-color); // change border-top color
+//     border-top-width: var(--mat-divider-width); // change border-top width
+// }
+
+
+
+/*------------------------------------------------------------------------------------------------------------------
+                                                Horizontal Divider
+------------------------------------------------------------------------------------------------------------------*/
+/*--------- ByDefault Divider ----------*/
+.mat-divider {
+    border-top-width: 1px;
+    border-top-style: dashed;
+    border-top-color: #18191a;
+}
+
+
+/*--------- Custom Divider 1 ----------*/
+.mat-divider.divider1 {
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #00b9ff;
+}
+
+/*--------- Custom Divider 2 ----------*/
+.mat-divider.divider2 {
+    margin: 10px 0;
+    border-top-width: 2px;
+    border-top-style: dotted;
+    border-top-color: #ea00ff;
+}
+
+/*--------- Custom Divider 3 ----------*/
+.mat-divider.divider3 {
+    margin: 5px 0;
+    border-top-width: 5px;
+    border-top-style: groove;
+    border-top-color: #ff2f49;
+}
+
+/*--------- Custom Divider 4 ----------*/
+.mat-divider.mat-divider.divider4 {
+    margin: 5px 0;
+    border-top-width: 5px;
+    border-top-style: double;
+    border-top-color: #a79ff9;
+}
+
+/*--------- Custom Divider 5 ----------*/
+.mat-divider.divider5 {
+    margin: 5px 0;
+    border-top-width: 5px;
+    border-top-style: ridge;
+    border-top-color: #efe76c;
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------
+                                                Vertical Divider
+------------------------------------------------------------------------------------------------------------------*/
+.grid-box-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+}
+
+.grid-box-2>.column {
+    margin: 0 20px;
+}
+
+.grid-box-2>.vertical-divider {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 0;
+}
+
+span {
+    border-radius: 0;
+    background-color: rgba(132, 143, 228, 0.478);
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/*----------- ByDefault Vertical Divider -----------*/
+.mat-divider-vertical {
+    border-right-width: 1px;
+    border-right-style: dashed !important;
+    border-right-color: rgb(0, 0, 0) !important;
+    height: 100%;
+}
+
+/*----------- Custom Vertical Divider 1 -----------*/
+.mat-divider-vertical.vertical-divider-1 {
+    border-right-width: 2px;
+    border-right-style: solid !important;
+    border-right-color: #00b9ff !important;
+    height: 100%;
+}
+
+/*----------- Custom Vertical Divider 2 -----------*/
+.mat-divider-vertical.vertical-divider-2 {
+    border-right-width: 3px;
+    border-right-style: dotted !important;
+    border-right-color: #ea00ff !important;
+    height: 100%;
+}
+
+/*----------- Custom Vertical Divider 3 -----------*/
+.mat-divider-vertical.vertical-divider-3 {
+    border-right-width: 5px;
+    border-right-style: double !important;
+    border-right-color: #a79ff9 !important;
+    height: 100%;
+}
+
+/*----------- Custom Vertical Divider 4 -----------*/
+.mat-divider-vertical.vertical-divider-4 {
+    border-right-width: 5px;
+    border-right-style: groove !important;
+    border-right-color: #ff2f49 !important;
+    height: 100%;
+}
+
+/*----------- Custom Vertical Divider 5 -----------*/
+.mat-divider-vertical.vertical-divider-5 {
+    border-right-width: 5px;
+    border-right-style: ridge !important;
+    border-right-color: #efe76c !important;
+    height: 100%;
+}
