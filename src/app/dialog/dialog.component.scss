@@ -1,0 +1,51 @@
+.flex-box {
+    display: grid;
+    margin: 20px 10px;
+    grid-template-columns: repeat(3, 33.33%);
+}
+
+.flex-box>p {
+    grid-column: span 3;
+    font-size: 17px;
+    color: rgb(150, 150, 150);
+    margin: 10px 0 20px 0;
+}
+
+.flex-box>.column {
+    border: 1px solid rgb(224, 224, 224);
+    padding: 15px;
+    margin: 0 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+// change Mat-Dialog Container CSS
+::ng-deep .mat-mdc-dialog-container {
+    --mdc-dialog-container-color: #b4ebff; // change Dialog Box Background Container Color
+    --mdc-dialog-with-divider-divider-color: rgba(0, 0, 0, 0.8) !important; // change dialog divider color
+    --mdc-dialog-subhead-color: red; // change dialog title color
+    --mdc-dialog-supporting-text-color: rgb(29, 44, 255); // change dialog content color
+}
+
+// change mat-dialog font styling
+::ng-deep .mat-mdc-dialog-container {
+    // for title only
+    --mdc-dialog-subhead-font: 'Titillium Web', sans-serif !important; // change content font-family
+    --mdc-dialog-subhead-line-height: 25px; // change dialog title line height
+    --mdc-dialog-subhead-size: 25px; // change dialog title font size
+    --mdc-dialog-subhead-weight: 600; // change dialog font title weight
+    --mdc-dialog-subhead-tracking: 3px; // change title font letter-spacing
+
+    // for content text only
+    --mdc-dialog-supporting-text-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; // change content font-family
+    --mdc-dialog-supporting-text-line-height: 25px; // change container font line height
+    --mdc-dialog-supporting-text-size: 10px; // change contaner font-size
+    --mdc-dialog-supporting-text-weight: 500; // change container font weight
+    --mdc-dialog-supporting-text-tracking: 3px; // change container font letter-spacing
+}
+
+
+// change dialog backdrop background color
+::ng-deep .cdk-overlay-dark-backdrop {
+    background: rgba(255, 0, 0, 0.65);
+}

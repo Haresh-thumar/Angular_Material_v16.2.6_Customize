@@ -8,6 +8,7 @@ import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 import { CardComponent } from './card/card.component';
 import { ChipsComponent } from './chips/chips.component';
 import { DatePickerComponent } from './date-picker/date-picker.component';
+import { DialogComponent } from './dialog/dialog.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
@@ -18,7 +19,7 @@ const routes: Routes = [
   { path: 'checkbox', component: CheckboxComponent },
   { path: 'Chips', component: ChipsComponent },
   { path: 'date-picker', component: DatePickerComponent },
-  // { path: 'dialog', component: DialogComponent },
+  { path: 'dialog', component: DialogComponent },
   // { path: 'divider', component: DividerComponent },
   // { path: 'Expansion-Panel', component: ExpansionPanelComponent },
   // { path: 'input', component: InputComponent },
