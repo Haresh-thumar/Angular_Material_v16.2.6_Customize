@@ -1,0 +1,236 @@
+.example-section {
+    margin: 20px 0;
+}
+
+.example-margin {
+    margin: 0 12px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 4px;
+}
+
+
+// Add Margin Between Two CheckBox
+.mat-mdc-checkbox {
+    margin: 15px 20px !important;
+}
+
+
+/*---------------------------------------------------------------------------------------------
+                                    Checkbox Global CSS
+---------------------------------------------------------------------------------------------*/
+::ng-deep .mat-mdc-checkbox .mdc-form-field {
+    font-family: var(--mdc-typography-body2-font-family, var(--mdc-typography-font-family, Roboto, sans-serif)); // change label font-family
+    font-size: var(--mdc-typography-body2-font-size, 18px); // change label font-size
+    line-height: var(--mdc-typography-body2-line-height, 20px); // change label line-height
+    font-weight: var(--mdc-typography-body2-font-weight, 500); // change label font-weight
+    letter-spacing: var(--mdc-typography-body2-letter-spacing, 0.0178571429em); // change label letter-spacing
+    text-decoration: var(--mdc-typography-body2-text-decoration, inherit); // change label text-decoration
+    text-transform: var(--mdc-typography-body2-text-transform, none); // change label text-transform
+    --mdc-checkbox-state-layer-size: 80px !important; // hover & active to change checkbox base circle
+}
+
+/*---------------------------------------------------------------------------------------------
+                                        Accent Color
+---------------------------------------------------------------------------------------------*/
+::ng-deep .mat-mdc-checkbox.mat-accent {
+    --mdc-checkbox-disabled-selected-icon-color: rgba(191, 4, 4, 0.28); // change disable checkbox selected icon color 
+    --mdc-checkbox-disabled-unselected-icon-color: rgba(191, 4, 4, 0.28); // disabled unselected checkbox change border color 
+
+    --mdc-checkbox-selected-checkmark-color: #fad900; // change checkbox selected checkmark icon color
+    --mdc-checkbox-selected-focus-icon-color: #c50545; // change selected checkbox icon color
+    --mdc-checkbox-selected-hover-icon-color: #0084ff; // selected checkbox hover to change checkmark color
+    --mdc-checkbox-selected-icon-color: #e703df; // change selected checkbox checkmark color
+    --mdc-checkbox-selected-pressed-icon-color: #039e0b; // click on chechbox to change checkbox color 
+
+    --mdc-checkbox-unselected-hover-icon-color: #ff4081; // checkbox focus to change border color
+    --mdc-checkbox-unselected-icon-color: #ff4081; // hover to change checkbox border color
+    --mdc-checkbox-unselected-pressed-icon-color: #ff8e38; // change checkbox border color
+
+    --mdc-checkbox-selected-focus-state-layer-color: #039e0b; // active to change checkbox base round color
+    --mdc-checkbox-selected-hover-state-layer-color: #ff0000 !important; // active to change checkbox base round color when checkbox is checked
+    --mdc-checkbox-selected-pressed-state-layer-color: #f7da00; // selected checkbox pressed state layer background
+
+    --mdc-checkbox-unselected-focus-state-layer-color: #ff0000; // change checkbox base round color when checkbox when unchecked
+    --mdc-checkbox-unselected-hover-state-layer-color: rgb(35, 21, 191); // change checkbox unselected hover state layer color
+    --mdc-checkbox-unselected-pressed-state-layer-color: black; // change checkbox unselected pressed state layer color
+}
+
+/*---------------------------------------------------------------------------------------------
+                                        Primary Color
+---------------------------------------------------------------------------------------------*/
+::ng-deep .mat-mdc-checkbox.mat-primary {
+    --mdc-checkbox-disabled-selected-icon-color: rgba(0, 0, 0, 0.38); // change disable checkbox selected icon color 
+    --mdc-checkbox-disabled-unselected-icon-color: rgba(0, 0, 0, 0.38); // disabled unselected checkbox change border color 
+
+    --mdc-checkbox-selected-checkmark-color: #fff; // change checkbox selected checkmark icon color
+    --mdc-checkbox-selected-focus-icon-color: #3f51b5; // change selected checkbox icon color
+    --mdc-checkbox-selected-hover-icon-color: #3f51b5; // selected checkbox hover to change checkmark color
+    --mdc-checkbox-selected-icon-color: #3f51b5; // change selected checkbox checkmark color
+    --mdc-checkbox-selected-pressed-icon-color: #3f51b5; // click on chechbox to change checkbox color
+
+    --mdc-checkbox-unselected-focus-icon-color: #3f51b5; // checkbox focus to change border color
+    --mdc-checkbox-unselected-hover-icon-color: #212121; // hover to change checkbox border color
+    --mdc-checkbox-unselected-icon-color: #3f51b5; // change checkbox border color
+
+    --mdc-checkbox-selected-focus-state-layer-color: #3f51b5; // active to change checkbox base round color
+    --mdc-checkbox-selected-hover-state-layer-color: #3f51b5; // active to change checkbox base round color when checkbox is checked
+    --mdc-checkbox-selected-pressed-state-layer-color: #3f51b5; // selected checkbox pressed state layer background
+
+    --mdc-checkbox-unselected-focus-state-layer-color: black; // change checkbox base round color when checkbox when unchecked
+    --mdc-checkbox-unselected-hover-state-layer-color: black; // change checkbox unselected hover state layer color
+    --mdc-checkbox-unselected-pressed-state-layer-color: black; // change checkbox unselected pressed state layer color
+}
+
+/*---------------------------------------------------------------------------------------------
+                                        Warn Color
+---------------------------------------------------------------------------------------------*/
+::ng-deep .mat-mdc-checkbox.mat-warn {
+    --mdc-checkbox-disabled-selected-icon-color: rgba(0, 0, 0, 0.38); // change disable checkbox selected icon color 
+    --mdc-checkbox-disabled-unselected-icon-color: rgba(0, 0, 0, 0.38); // disabled unselected checkbox change border color 
+
+    --mdc-checkbox-selected-checkmark-color: #fff; // change checkbox selected checkmark icon color
+    --mdc-checkbox-selected-focus-icon-color: #f44336; // change selected checkbox icon color
+    --mdc-checkbox-selected-hover-icon-color: #f44336; // selected checkbox hover to change checkmark color
+    --mdc-checkbox-selected-icon-color: #f44336; // change selected checkbox checkmark color
+    --mdc-checkbox-selected-pressed-icon-color: #f44336; // click on chechbox to change checkbox color
+
+    --mdc-checkbox-unselected-focus-icon-color: #f44336; // checkbox focus to change border color
+    --mdc-checkbox-unselected-hover-icon-color: #212121; // hover to change checkbox border color
+    --mdc-checkbox-unselected-icon-color: rgba(0, 0, 0, 0.54); // change checkbox border color
+
+    --mdc-checkbox-selected-focus-state-layer-color: #f44336; // active to change checkbox base round color
+    --mdc-checkbox-selected-hover-state-layer-color: #f44336; // active to change checkbox base round color when checkbox is checked
+    --mdc-checkbox-selected-pressed-state-layer-color: #f44336; // selected checkbox pressed state layer background
+
+    --mdc-checkbox-unselected-focus-state-layer-color: black; // change checkbox base round color when checkbox when unchecked
+    --mdc-checkbox-unselected-hover-state-layer-color: black; // change checkbox unselected hover state layer color
+    --mdc-checkbox-unselected-pressed-state-layer-color: black; // change checkbox unselected pressed state layer color
+}
+
+
+/*---------------------------------------------------------------------------------------------
+                                        Success Color
+---------------------------------------------------------------------------------------------*/
+::ng-deep .mat-mdc-checkbox.mat-success {
+    --mdc-checkbox-disabled-selected-icon-color: rgba(0, 0, 0, 0.38); // change disable checkbox selected icon color 
+    --mdc-checkbox-disabled-unselected-icon-color: rgba(0, 0, 0, 0.38); // disabled unselected checkbox change border color 
+
+    --mdc-checkbox-selected-checkmark-color: #fff; // change checkbox selected checkmark icon color
+    --mdc-checkbox-selected-focus-icon-color: #00bb16; // change selected checkbox icon color
+    --mdc-checkbox-selected-hover-icon-color: #00bb16; // selected checkbox hover to change checkmark color
+    --mdc-checkbox-selected-icon-color: #00bb16; // change selected checkbox checkmark color
+    --mdc-checkbox-selected-pressed-icon-color: #00bb16; // click on chechbox to change checkbox color
+
+    --mdc-checkbox-unselected-focus-icon-color: #212121; // checkbox focus to change border color
+    --mdc-checkbox-unselected-hover-icon-color: #00bb16; // hover to change checkbox border color
+    --mdc-checkbox-unselected-icon-color: #00bb16; // change checkbox border color
+
+    --mdc-checkbox-selected-focus-state-layer-color: #00bb16; // active to change checkbox base round color
+    --mdc-checkbox-selected-hover-state-layer-color: #00bb16; // active to change checkbox base round color when checkbox is checked
+    --mdc-checkbox-selected-pressed-state-layer-color: #00bb16; // selected checkbox pressed state layer background
+
+    --mdc-checkbox-unselected-focus-state-layer-color: black; // change checkbox base round color when checkbox when unchecked
+    --mdc-checkbox-unselected-hover-state-layer-color: black; // change checkbox unselected hover state layer color
+    --mdc-checkbox-unselected-pressed-state-layer-color: black; // change checkbox unselected pressed state layer color
+}
+
+
+/*---------------------------------------------------------------------------------------------
+                                        Warning Color
+---------------------------------------------------------------------------------------------*/
+::ng-deep .mat-mdc-checkbox.mat-warning {
+    --mdc-checkbox-disabled-selected-icon-color: rgba(0, 0, 0, 0.38); // change disable checkbox selected icon color 
+    --mdc-checkbox-disabled-unselected-icon-color: rgba(0, 0, 0, 0.38); // disabled unselected checkbox change border color 
+
+    --mdc-checkbox-selected-checkmark-color: #000; // change checkbox selected checkmark icon color
+    --mdc-checkbox-selected-focus-icon-color: #fcca00; // change selected checkbox icon color
+    --mdc-checkbox-selected-hover-icon-color: #fcca00; // selected checkbox hover to change checkmark color
+    --mdc-checkbox-selected-icon-color: #fcca00; // change selected checkbox checkmark color
+    --mdc-checkbox-selected-pressed-icon-color: #fcca00; // click on chechbox to change checkbox color
+
+    --mdc-checkbox-unselected-focus-icon-color: #212121; // checkbox hover to change border color
+    --mdc-checkbox-unselected-hover-icon-color: #fcca00; // hover to change checkbox border color
+    --mdc-checkbox-unselected-icon-color: #fcca00; // change checkbox border color
+
+    --mdc-checkbox-selected-focus-state-layer-color: #fcca00; // active to change checkbox base round color
+    --mdc-checkbox-selected-hover-state-layer-color: #fcca00; // active to change checkbox base round color when checkbox is checked
+    --mdc-checkbox-selected-pressed-state-layer-color: #fcca00; // selected checkbox pressed state layer background
+
+    --mdc-checkbox-unselected-focus-state-layer-color: black; // change checkbox base round color when checkbox when unchecked
+    --mdc-checkbox-unselected-hover-state-layer-color: black; // change checkbox unselected hover state layer color
+    --mdc-checkbox-unselected-pressed-state-layer-color: black; // change checkbox unselected pressed state layer color
+}
+
+
+/*---------------------------------------------------------------------------------------------
+                                        Info Color
+---------------------------------------------------------------------------------------------*/
+::ng-deep .mat-mdc-checkbox.mat-info {
+    --mdc-checkbox-disabled-selected-icon-color: rgba(0, 0, 0, 0.38); // change disable checkbox selected icon color 
+    --mdc-checkbox-disabled-unselected-icon-color: rgba(0, 0, 0, 0.38); // disabled unselected checkbox change border color 
+
+    --mdc-checkbox-selected-checkmark-color: #000; // change checkbox selected checkmark icon color
+    --mdc-checkbox-selected-focus-icon-color: #00a4fc; // change selected checkbox icon color
+    --mdc-checkbox-selected-hover-icon-color: #00a4fc; // selected checkbox hover to change checkmark color
+    --mdc-checkbox-selected-icon-color: #00a4fc; // change selected checkbox checkmark color
+    --mdc-checkbox-selected-pressed-icon-color: #00a4fc; // click on chechbox to change checkbox color
+
+    --mdc-checkbox-unselected-focus-icon-color: #212121; // checkbox hover to change border color
+    --mdc-checkbox-unselected-hover-icon-color: #00a4fc; // hover to change checkbox border color
+    --mdc-checkbox-unselected-icon-color: #00a4fc; // change checkbox border color
+
+    --mdc-checkbox-selected-focus-state-layer-color: #00a4fc; // active to change checkbox base round color
+    --mdc-checkbox-selected-hover-state-layer-color: #00a4fc; // active to change checkbox base round color when checkbox is checked
+    --mdc-checkbox-selected-pressed-state-layer-color: #00a4fc; // selected checkbox pressed state layer background
+
+    --mdc-checkbox-unselected-focus-state-layer-color: black; // change checkbox base round color when checkbox when unchecked
+    --mdc-checkbox-unselected-hover-state-layer-color: black; // change checkbox unselected hover state layer color
+    --mdc-checkbox-unselected-pressed-state-layer-color: black; // change checkbox unselected pressed state layer color
+}
+
+/*---------------------------------------------------------------------------------------------
+                                        Teal Color
+---------------------------------------------------------------------------------------------*/
+::ng-deep .mat-mdc-checkbox.mat-teal {
+    --mdc-checkbox-disabled-selected-icon-color: rgba(0, 0, 0, 0.38); // change disable checkbox selected icon color 
+    --mdc-checkbox-disabled-unselected-icon-color: rgba(0, 0, 0, 0.38); // disabled unselected checkbox change border color 
+
+    --mdc-checkbox-selected-checkmark-color: #000; // change checkbox selected checkmark icon color
+    --mdc-checkbox-selected-focus-icon-color: #00f396; // change selected checkbox icon color
+    --mdc-checkbox-selected-hover-icon-color: #00f396; // selected checkbox hover to change checkmark color
+    --mdc-checkbox-selected-icon-color: #00f396; // change selected checkbox checkmark color
+    --mdc-checkbox-selected-pressed-icon-color: #00f396; // click on chechbox to change checkbox color
+
+    --mdc-checkbox-unselected-focus-icon-color: #212121; // checkbox hover to change border color
+    --mdc-checkbox-unselected-hover-icon-color: #00f396; // hover to change checkbox border color
+    --mdc-checkbox-unselected-icon-color: #00f396; // change checkbox border color
+
+    --mdc-checkbox-selected-focus-state-layer-color: #00f396; // active to change checkbox base round color
+    --mdc-checkbox-selected-hover-state-layer-color: #00f396; // active to change checkbox base round color when checkbox is checked
+    --mdc-checkbox-selected-pressed-state-layer-color: #00f396; // selected checkbox pressed state layer background
+
+    --mdc-checkbox-unselected-focus-state-layer-color: black; // change checkbox base round color when checkbox when unchecked
+    --mdc-checkbox-unselected-hover-state-layer-color: black; // change checkbox unselected hover state layer color
+    --mdc-checkbox-unselected-pressed-state-layer-color: black; // change checkbox unselected pressed state layer color
+}
+
+
+// change disabled checkbox label color
+::ng-deep .mat-mdc-checkbox.mat-mdc-checkbox-disabled label {
+    color: rgba(191, 4, 4, 0.35);
+}
+
+// Change CheckBox Width & Height
+::ng-deep .mdc-checkbox__background {
+    width: 25px !important;
+    height: 25px !important;
+}
+
+// Make Checkbox Ripple Circle in Center
+::ng-deep .mat-mdc-checkbox .mdc-checkbox .mdc-checkbox__background {
+    top: calc((var(--mdc-checkbox-state-layer-size, 44px) - 25px) / 2) !important;
+    left: calc((var(--mdc-checkbox-state-layer-size, 44px) - 25px) / 2) !important;
+}

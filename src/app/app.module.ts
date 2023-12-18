@@ -12,6 +12,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 
 /******************** MATERIAL COMPONENTS ********************/
@@ -20,6 +21,8 @@ import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
 import { ButtonComponent } from './button/button.component';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 import { CardComponent } from './card/card.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -30,18 +33,21 @@ import { CardComponent } from './card/card.component';
     ButtonComponent,
     ButtonToggleComponent,
     CardComponent,
+    CheckboxComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     MatBadgeModule,
     MatButtonModule,
     MatBottomSheetModule,
     MatListModule,
     MatIconModule,
     MatButtonToggleModule,
-    MatCardModule
+    MatCardModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

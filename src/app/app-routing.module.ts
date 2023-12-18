@@ -1,3 +1,4 @@
+import { CheckboxComponent } from './checkbox/checkbox.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BadgeComponent } from './badge/badge.component';
@@ -12,7 +13,7 @@ const routes: Routes = [
   { path: 'button', component: ButtonComponent },
   { path: 'botton-toggle', component: ButtonToggleComponent },
   { path: 'card', component: CardComponent },
-  // { path: 'checkbox', component: CheckboxComponent },
+  { path: 'checkbox', component: CheckboxComponent },
   // { path: 'Chips', component: ChipComponent },
   // { path: 'date-picker', component: DatePickerComponent },
   // { path: 'dialog', component: DialogComponent },
