@@ -40,6 +40,7 @@ import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.compo
 import { HorizontalStepperComponent } from './horizontal-stepper/horizontal-stepper.component';
 import { IconComponent } from './icon/icon.component';
 import { InputComponent } from './input/input.component';
+import { ListComponent } from './list/list.component';
 
 
 @NgModule({
@@ -59,7 +60,8 @@ import { InputComponent } from './input/input.component';
     ExpansionPanelComponent,
     HorizontalStepperComponent,
     IconComponent,
-    InputComponent
+    InputComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,

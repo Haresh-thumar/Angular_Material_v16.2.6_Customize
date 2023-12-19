@@ -1,0 +1,132 @@
+<h1>Mat List Customize</h1>
+<br><br>
+<!--***********************************************************************************************************************************
+                                                        Mat-List Active State
+************************************************************************************************************************************-->
+<div class="grid-box">
+    <!------------------- Basic list ------------------->
+    <div>
+        <h2>Basic List</h2>
+        <mat-list role="list">
+            <mat-list-item role="listitem">Item 1</mat-list-item>
+            <mat-list-item role="listitem">Item 2</mat-list-item>
+            <mat-list-item role="listitem">Item 3</mat-list-item>
+        </mat-list>
+    </div>
+    <!------------------- List with sections (Warn Theme) ------------------->
+    <div>
+        <h2>List with sections (Warn Theme)</h2>
+        <mat-list>
+            <div mat-subheader>Folders</div>
+            <mat-list-item *ngFor="let folder of folders">
+                <mat-icon matListItemIcon>folder</mat-icon>
+                <div matListItemTitle>{{folder.name}}</div>
+                <div matListItemLine>{{folder.updated | date}}</div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <div mat-subheader>Notes</div>
+            <mat-list-item *ngFor="let note of notes">
+                <mat-icon matListItemIcon>note</mat-icon>
+                <div matListItemTitle>{{note.name}}</div>
+                <div matListItemLine>{{note.updated | date}}</div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <div mat-subheader>Disable state</div>
+            <mat-list-item disabled="">
+                <mat-icon matListItemIcon>note</mat-icon>
+                <div matListItemTitle>disable state</div>
+                <div matListItemLine>disable state change css</div>
+            </mat-list-item>
+        </mat-list>
+    </div>
+    <!------------------- List with selection (Primary Theme) ------------------->
+    <div>
+        <h2>List with Multiple selection</h2>
+        <mat-selection-list #shoes color="primary">
+            <mat-list-option *ngFor="let shoe of typesOfShoes"> {{shoe}} </mat-list-option>
+            <mat-list-option [value]="'disabled'" disabled> disabled checkbox </mat-list-option>
+            <mat-list-option [value]="'disabled'" disabled selected> disabled checkbox </mat-list-option>
+        </mat-selection-list>
+        <p style="margin: 20px 0 0 18px;">Options selected: {{shoes.selectedOptions.selected.length}} </p>
+    </div>
+    <!------------------- List with selection (Violate Theme) ------------------->
+    <div>
+        <h2>List with Single selection</h2>
+        <mat-selection-list #shoes2 [multiple]="false">
+            <mat-list-option *ngFor="let shoe of typesOfShoes" [value]="shoe"> {{shoe}} </mat-list-option>
+            <mat-list-option [value]="'disabled'" disabled=""> disabled radio </mat-list-option>
+        </mat-selection-list>
+        <p style="margin: 20px 0 0 18px;">Option selected:
+            {{shoes2.selectedOptions.hasValue() ? shoes2.selectedOptions.selected[0].value : 'None'}} </p>
+    </div>
+    <!------------------- Single line lists ------------------->
+    <div>
+        <h2>Single line lists</h2>
+        <mat-list>
+            <mat-list-item>
+                <span matListItemTitle>This is the title</span>
+            </mat-list-item>
+            <mat-list-item>
+                <span matListItemTitle>Also the title</span>
+            </mat-list-item>
+        </mat-list>
+    </div>
+    <!------------------- Two line lists ------------------->
+    <div>
+        <h2>Two line lists</h2>
+        <mat-list>
+            <mat-list-item>
+                <span matListItemTitle>Title</span>
+                <span matListItemLine>Second line</span>
+            </mat-list-item>
+            <mat-list-item>
+                <span matListItemTitle>Title</span>
+                <span matListItemLine>Second line</span>
+            </mat-list-item>
+            <mat-list-item>
+                <span matListItemTitle>Title</span>
+                <span matListItemLine>Second line</span>
+            </mat-list-item>
+        </mat-list>
+    </div>
+    <!------------------- Three line lists ------------------->
+    <div>
+        <h2>Three line lists</h2>
+        <mat-list>
+            <mat-list-item>
+                <span matListItemTitle>Title</span>
+                <span matListItemLine>Second line</span>
+                <span matListItemLine>Third line</span>
+            </mat-list-item>
+            <mat-list-item>
+                <span matListItemTitle>Title</span>
+                <span matListItemLine>Second line. This line will truncate.</span>
+                <span matListItemLine>Third line</span>
+            </mat-list-item>
+            <mat-list-item>
+                <span matListItemTitle>Title</span>
+                <span matListItemLine>Second line. This line will truncate.</span>
+                <span matListItemLine>Third line</span>
+            </mat-list-item>
+        </mat-list>
+    </div>
+    <!------------------- Three line list with secondary text wrapping ------------------->
+    <div>
+        <h2>Three line list with secondary text wrapping</h2>
+        <mat-list class="example-list-wrapping">
+            <mat-list-item lines="3">
+                <span matListItemTitle>Title</span>
+                <span>Secondary line that will wrap because the list lines is explicitly set to 3 lines. Text inside of
+                    a `matListItemTitle` or `matListItemLine` will never wrap. </span>
+            </mat-list-item>
+            <mat-list-item lines="3">
+                <span matListItemTitle>Title</span>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est. </span>
+            </mat-list-item>
+        </mat-list>
+    </div>
+</div>

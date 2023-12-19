@@ -1,0 +1,192 @@
+.grid-box {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.grid-box>div {
+    border: 1px solid rgb(168, 153, 255);
+    padding: 10px;
+    border-radius: 10px;
+    height: max-content;
+    height: auto;
+    margin: 10px 0;
+}
+
+.grid-box>div:first-child {
+    margin: 0 5px 0 0;
+}
+
+.grid-box>div:last-child {
+    margin: 0 0 0 5px;
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------
+                                        Mat-List Global Style using Variable
+-------------------------------------------------------------------------------------------------------------*/
+.mat-mdc-list-base {
+    // mat-list-base container size
+    --mdc-list-list-item-one-line-container-height: 60px; // change list item one line container height
+    --mdc-list-list-item-two-line-container-height: 70px; // change list item two line container height
+    --mdc-list-list-item-three-line-container-height: 95px; // change list item three line container height
+    // mat-list item color
+    --mdc-list-list-item-label-text-color: rgba(255, 3, 83, 0.87); // change list item label text color
+    --mdc-list-list-item-supporting-text-color: rgba(3, 95, 255, 0.87); // change list item supporting text color
+    --mdc-list-list-item-leading-icon-color: rgb(255, 27, 95); // change list item leading icon color
+    --mdc-list-list-item-hover-label-text-color: rgba(54, 73, 239, 1) !important; // hover to change list item label text color
+    --mdc-list-list-item-hover-leading-icon-color: rgba(108, 0, 240, 0.725); // hover to change list item leading icon color
+    --mdc-list-list-item-hover-state-layer-color: rgb(255, 209, 209) !important; // hover to change list item state layer color 
+    --mdc-list-list-item-hover-state-layer-opacity: 0.6; // change list item hover state layer opacity
+    --mdc-list-list-item-focus-label-text-color: rgba(186, 56, 0, 0.87) !important; // focus to change list item state label text color 
+    --mdc-list-list-item-focus-state-layer-color: rgba(133, 186, 0, 0.611); // focus to change list item state layer color
+    --mdc-list-list-item-focus-state-layer-opacity: 0.12; // change list item focus state layer opacity
+    --mdc-list-list-item-disabled-label-text-color: rgb(89, 89, 89); // disable state list item label text color
+    --mdc-list-list-item-disabled-leading-icon-color: rgb(118, 118, 118); // disable state list item leading icon color
+    // label text configuration
+    --mdc-list-list-item-label-text-font: Verdana, Geneva, Tahoma, sans-serif; // change list item label text font-family
+    --mdc-list-list-item-label-text-line-height: 24px; // change list item label text line-height
+    --mdc-list-list-item-label-text-size: 18px; // change list item label text font-size
+    --mdc-list-list-item-label-text-tracking: 0.03125em; // change list item label text letter-spacing
+    --mdc-list-list-item-label-text-weight: 500; // change list item label text font-weight
+    --mdc-list-list-item-supporting-text-font: 'Times New Roman', Times, serif; // change list item supporting text font-family
+    --mdc-list-list-item-supporting-text-line-height: 20px; // change list item supporting text line-height
+    --mdc-list-list-item-supporting-text-size: 16px; // change list item supporting text font-size
+    --mdc-list-list-item-supporting-text-tracking: 0.0178571429em; // change list item supporting text letter-spacing
+    --mdc-list-list-item-supporting-text-weight: 400; // change list item supporting text font-weight
+    --mdc-list-list-item-trailing-supporting-text-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important; // change list item trailing supporting text font-family
+    --mdc-list-list-item-trailing-supporting-text-line-height: 20px; // change list item trailing supporting text line-height
+    --mdc-list-list-item-trailing-supporting-text-size: 12px; // change list item trailing supporting text font-size
+    --mdc-list-list-item-trailing-supporting-text-tracking: 0.0333333333em; // change list item trailing supporting text letter-spacing
+    --mdc-list-list-item-trailing-supporting-text-weight: 400; // change list item trailing supporting text font-weight
+    background-color: aliceblue; // change list background color
+}
+
+/*--------- mat-list header ---------*/
+::ng-deep .mdc-list-group__subheader {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: Roboto, sans-serif;
+    letter-spacing: .009375em;
+}
+
+/*----- change mat-list item css -----*/
+.mdc-list-item {
+    cursor: pointer;
+    margin: 10px 0; // change margin between two list-item
+    background-color: #ffe3fc; // list item bg color
+    border-bottom: 2px dashed #1c1cff; // list item bottom border
+}
+
+/*----- change list item last-child css -----*/
+.mdc-list-item:last-child {
+    border-bottom: 0; // remove last element border
+}
+
+/*------- hover to change mat-item text color --------*/
+::ng-deep .mat-mdc-list-option:hover .mdc-list-item__primary-text {
+    color: #00a110 !important;
+}
+
+
+
+/*------- Mat-List option (DeFault theme) -------*/
+.mat-mdc-list-option {
+    --mdc-checkbox-unselected-icon-color: rgba(179, 2, 255, 0.878); // change unselected checkbox border color
+    --mdc-checkbox-unselected-hover-icon-color: #ff0000; // hover to change unselected checkbox border color
+    --mdc-checkbox-unselected-pressed-icon-color: rgba(47, 127, 1, 0.951); // change checkbox unselected pressed border color
+    --mdc-checkbox-selected-checkmark-color: #00f7ff !important; // change selected checkbox checkmark icon color
+    --mdc-checkbox-selected-icon-color: #ff0051 !important; // change selected checkbox background color 
+    --mdc-checkbox-selected-pressed-icon-color: #ff00d0 !important; // change selected checkbox pressed icon color
+    --mdc-checkbox-selected-hover-icon-color: #ffe100 !important; // hover to change selected checkbox icon color
+    --mdc-checkbox-disabled-selected-icon-color: rgb(123, 0, 0) !important; // change disabled state selected icon color
+    --mdc-checkbox-disabled-unselected-icon-color: rgb(212, 0, 0) !important; // change disabled state unselected icon color
+}
+
+
+/*------- Mat-List option (accent theme) -------*/
+.mat-mdc-list-option.mat-accent {
+    --mdc-checkbox-unselected-icon-color: rgba(0, 0, 0, 0.54);
+    --mdc-checkbox-unselected-hover-icon-color: #212121;
+    --mdc-checkbox-unselected-pressed-icon-color: rgba(0, 0, 0, 0.54);
+    --mdc-checkbox-selected-checkmark-color: #fff;
+    --mdc-checkbox-selected-icon-color: #ff4081;
+    --mdc-checkbox-selected-pressed-icon-color: #ff4081;
+    --mdc-checkbox-selected-hover-icon-color: #ff4081;
+    --mdc-checkbox-disabled-selected-icon-color: rgba(18, 9, 9, 0.38);
+    --mdc-checkbox-disabled-unselected-icon-color: rgba(0, 0, 0, 0.38);
+}
+
+
+/*------- Mat-List option (warn theme) -------*/
+.mat-mdc-list-option.mat-warn {
+    --mdc-checkbox-unselected-icon-color: rgba(0, 0, 0, 0.54);
+    --mdc-checkbox-unselected-hover-icon-color: #212121;
+    --mdc-checkbox-unselected-pressed-icon-color: rgba(0, 0, 0, 0.54);
+    --mdc-checkbox-selected-checkmark-color: #fff;
+    --mdc-checkbox-selected-icon-color: #f44336;
+    --mdc-checkbox-selected-pressed-icon-color: #f44336;
+    --mdc-checkbox-selected-hover-icon-color: #f44336;
+    --mdc-checkbox-disabled-selected-icon-color: rgba(0, 0, 0, 0.38);
+    --mdc-checkbox-disabled-unselected-icon-color: rgba(0, 0, 0, 0.38);
+}
+
+
+
+/*------- Mat-List Radio (DeFault theme) -------*/
+::ng-deep.mdc-list-item__start,
+::ng-deep.mdc-list-item__end {
+    --mdc-radio-unselected-hover-icon-color: #bd2900 !important; // hover to change unselected radio circle color
+    --mdc-radio-unselected-icon-color: #009dbd !important; // change unselected radio circle color
+    --mdc-radio-unselected-pressed-icon-color: rgb(255, 157, 0) !important; // change radio unselected pressed icon color
+    --mdc-radio-selected-hover-icon-color: #111c5a !important; // hover to change selected radio circle color 
+    --mdc-radio-selected-icon-color: rgb(255, 149, 0) !important; // radio selected circle color
+    --mdc-radio-selected-pressed-icon-color: #00ad8e !important; // radio selected pressed icon color
+    --mdc-radio-disabled-selected-icon-color: #515151 !important; // disabled selected icon color
+    --mdc-radio-disabled-unselected-icon-color: #515151 !important; // disabled unselected icon color
+}
+
+
+/*------- Mat-List Radio (accent theme) -------*/
+.mat-accent .mdc-list-item__start,
+.mat-accent .mdc-list-item__end {
+    --mdc-radio-unselected-hover-icon-color: #212121;
+    --mdc-radio-unselected-icon-color: rgba(0, 0, 0, 0.54);
+    --mdc-radio-unselected-pressed-icon-color: rgba(0, 0, 0, 0.54);
+    --mdc-radio-selected-hover-icon-color: #ff4081;
+    --mdc-radio-selected-icon-color: #ff4081;
+    --mdc-radio-selected-pressed-icon-color: #ff4081;
+    --mdc-radio-disabled-selected-icon-color: #000;
+    --mdc-radio-disabled-unselected-icon-color: #000;
+}
+
+/*------- Mat-List Radio (warn theme) -------*/
+.mat-warn .mdc-list-item__start,
+.mat-warn .mdc-list-item__end {
+    --mdc-radio-unselected-hover-icon-color: #212121;
+    --mdc-radio-unselected-icon-color: rgba(0, 0, 0, 0.54);
+    --mdc-radio-unselected-pressed-icon-color: rgba(0, 0, 0, 0.54);
+    --mdc-radio-selected-hover-icon-color: #f44336;
+    --mdc-radio-selected-icon-color: #f44336;
+    --mdc-radio-selected-pressed-icon-color: #f44336;
+    --mdc-radio-disabled-selected-icon-color: #000;
+    --mdc-radio-disabled-unselected-icon-color: #000;
+}
+
+
+
+/*---------- Disabled list item opacity ----------*/
+::ng-deep .mat-mdc-list-base .mdc-list-item--disabled .mdc-list-item__start,
+::ng-deep .mat-mdc-list-base .mdc-list-item--disabled .mdc-list-item__content,
+::ng-deep .mat-mdc-list-base .mdc-list-item--disabled .mdc-list-item__end {
+    opacity: 0.5 !important;
+}
+
+/*---------- Mat-list with icon two line --------*/
+::ng-deep .mat-mdc-list-item.mdc-list-item--with-leading-avatar.mdc-list-item--with-two-lines,
+::ng-deep .mat-mdc-list-item.mdc-list-item--with-leading-checkbox.mdc-list-item--with-two-lines,
+::ng-deep .mat-mdc-list-item.mdc-list-item--with-leading-icon.mdc-list-item--with-two-lines {
+    height: 80px !important;
+}
