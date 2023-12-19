@@ -1,0 +1,101 @@
+<h1>Mat-Input Customize</h1>
+<hr><br>
+<!------------------------------------------------------------------------------------------------
+                                    Mat-Input (Fill, Outline)
+------------------------------------------------------------------------------------------------->
+<div class="row">
+    <div class="col-xxl-4 col-lg-6 col-sm-12">
+        <h1>Input Fill</h1>
+        <!---------------- Input (Fill) --------------->
+        <p>Input Fill (accent)</p>
+        <mat-form-field class="example-full-width" appearance="fill" color="accent">
+            <mat-label>Input</mat-label>
+            <input matInput placeholder="Enter User Name...">
+        </mat-form-field>
+        <p>Input Fill (primary)</p>
+        <mat-form-field class="example-full-width" appearance="fill" color="primary">
+            <mat-label>Input</mat-label>
+            <input matInput placeholder="Enter User Name...">
+        </mat-form-field>
+        <p>Input Fill (warn)</p>
+        <mat-form-field class="example-full-width" appearance="fill" color="warn">
+            <mat-label>Input</mat-label>
+            <input matInput placeholder="Enter User Name...">
+        </mat-form-field>
+        <p>Without Lable Input</p>
+        <mat-form-field class="example-full-width" appearance="fill" color="warn">
+            <input matInput placeholder="Enter User Name...">
+        </mat-form-field>
+    </div>
+    <br>
+    <br>
+    <div class="col-xxl-4 col-lg-6 col-sm-12">
+        <h1>Input Outline</h1>
+        <!---------------- Input (Outline) --------------->
+        <p>Input Outline (accent)</p>
+        <mat-form-field class="example-full-width" appearance="outline" color="accent">
+            <mat-label>Input</mat-label>
+            <input matInput placeholder="Enter Email Name...">
+        </mat-form-field>
+        <p>Input Outline (primary)</p>
+        <mat-form-field class="example-full-width" appearance="outline" color="primary">
+            <mat-label>Input</mat-label>
+            <input matInput placeholder="Enter Email Name...">
+        </mat-form-field>
+        <p>Input Outline (warn)</p>
+        <mat-form-field class="example-full-width" appearance="outline" color="warn">
+            <mat-label>Input</mat-label>
+            <input matInput placeholder="Enter Email Name...">
+        </mat-form-field>
+        <p>Without Lable Input</p>
+        <mat-form-field class="example-full-width" appearance="outline" color="warn">
+            <input matInput placeholder="Enter Email Name...">
+        </mat-form-field>
+    </div>
+    <br>
+    <br>
+    <div class="col-xxl-4 col-lg-6 col-sm-12">
+        <!---------------- Input with Icon --------------->
+        <h1>Input With Icon (outline)</h1>
+        <mat-form-field appearance="outline">
+            <mat-label>Fill form field</mat-label>
+            <input matInput placeholder="Placeholder">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+        <br><br>
+        <!---------------- Textarea --------------->
+        <h1>Textarea</h1>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Leave a comment</mat-label>
+            <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+        </mat-form-field>
+    </div>
+</div>
+<br><br>
+<!------------------------------------------------------------------------------------------------
+                                    Mat-Input (Disabled State)
+------------------------------------------------------------------------------------------------->
+<!------ fill ------->
+<h2>Input Disabled (fill)</h2>
+<mat-form-field class="example-full-width" appearance="fill" color="primary">
+    <mat-label>Input</mat-label>
+    <input matInput placeholder="Enter User Name..." value="123" disabled>
+</mat-form-field>
+<!------ outline ------->
+<h2>Input Disabled (outline)</h2>
+<mat-form-field class="example-full-width" appearance="outline" color="accent">
+    <mat-label>Input</mat-label>
+    <input matInput placeholder="Enter User Name..." value="disabled value" disabled>
+</mat-form-field>
+<!------ Placeholder ------->
+<h2>Input Disabled (outline)</h2>
+<mat-form-field class="example-full-width" color="warn">
+    <input matInput placeholder="Enter User Name..." disabled>
+</mat-form-field>
+<!---------------- Textarea --------------->
+<h2>Mat TextArea</h2>
+<mat-form-field class="example-full-width" appearance="outline" color="primary">
+    <mat-label>Leave a comment</mat-label>
+    <textarea matInput placeholder="Ex. It makes me feel..." value="textarea value" disabled></textarea>
+</mat-form-field>
