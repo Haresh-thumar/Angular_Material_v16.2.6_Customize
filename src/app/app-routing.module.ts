@@ -12,6 +12,7 @@ import { DialogComponent } from './dialog/dialog.component';
 import { DividerComponent } from './divider/divider.component';
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 import { HorizontalStepperComponent } from './horizontal-stepper/horizontal-stepper.component';
+import { IconComponent } from './icon/icon.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
@@ -26,8 +27,8 @@ const routes: Routes = [
   { path: 'divider', component: DividerComponent },
   { path: 'Expansion-Panel', component: ExpansionPanelComponent },
   { path: 'Hstapper', component: HorizontalStepperComponent },
+  { path: 'icon', component: IconComponent },
   // { path: 'input', component: InputComponent },
-  // { path: 'icon', component: IconComponent },
   // { path: 'list', component: ListComponent },
   // { path: 'menu', component: MenuComponent },
   // { path: 'paginator', component: PaginatorComponent },

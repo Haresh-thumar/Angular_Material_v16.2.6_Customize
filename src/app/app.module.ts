@@ -38,6 +38,7 @@ import { DialogComponent, AppDialogBox2Component } from './dialog/dialog.compone
 import { DividerComponent } from './divider/divider.component';
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 import { HorizontalStepperComponent } from './horizontal-stepper/horizontal-stepper.component';
+import { IconComponent } from './icon/icon.component';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import { HorizontalStepperComponent } from './horizontal-stepper/horizontal-step
     AppDialogBox2Component,
     DividerComponent,
     ExpansionPanelComponent,
-    HorizontalStepperComponent
+    HorizontalStepperComponent,
+    IconComponent
   ],
   imports: [
     BrowserModule,

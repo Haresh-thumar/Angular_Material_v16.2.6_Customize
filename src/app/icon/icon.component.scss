@@ -1,0 +1,92 @@
+.example-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------------
+                        Default Theme Color Icon
+-----------------------------------------------------------------------*/
+.mat-icon.mat-primary {
+    --mat-icon-color: #007adc;
+    height: 40px !important;
+    width: 40px !important;
+    overflow: auto !important;
+    font-size: 20px;
+}
+
+.mat-icon.mat-accent {
+    --mat-icon-color: #e66933;
+    height: 40px !important;
+    width: 40px !important;
+    overflow: auto !important;
+    font-size: 40px;
+}
+
+.mat-icon.mat-warn {
+    --mat-icon-color: #f82112;
+    height: 60px !important;
+    width: 60px !important;
+    overflow: auto !important;
+    font-size: 60px;
+    animation: zoom-in-zoom-out 2s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(0.6, 0.6);
+        opacity: 0.1;
+    }
+
+    50% {
+        transform: scale(1.7, 1.7);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.6, 0.6);
+        opacity: 0.1;
+    }
+}
+
+
+
+
+/*-----------------------------------------------------------------------
+                        Custom Theme Color Icon
+-----------------------------------------------------------------------*/
+.mat-icon.mat-success {
+    --mat-icon-color: #198754;
+    height: 80px !important;
+    width: 80px !important;
+    overflow: auto !important;
+    font-size: 80px;
+}
+
+.mat-icon.mat-warning {
+    --mat-icon-color: #ffc107;
+    height: 100px !important;
+    width: 100px !important;
+    overflow: auto !important;
+    font-size: 100px;
+}
+
+.mat-icon.mat-secondary {
+    --mat-icon-color: #6c757d;
+    height: 120px !important;
+    width: 120px !important;
+    overflow: auto !important;
+    font-size: 120px;
+    animation: circle 4s linear infinite;
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
