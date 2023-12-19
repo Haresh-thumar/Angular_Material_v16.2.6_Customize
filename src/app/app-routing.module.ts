@@ -10,6 +10,7 @@ import { ChipsComponent } from './chips/chips.component';
 import { DatePickerComponent } from './date-picker/date-picker.component';
 import { DialogComponent } from './dialog/dialog.component';
 import { DividerComponent } from './divider/divider.component';
+import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
@@ -22,7 +23,7 @@ const routes: Routes = [
   { path: 'date-picker', component: DatePickerComponent },
   { path: 'dialog', component: DialogComponent },
   { path: 'divider', component: DividerComponent },
-  // { path: 'Expansion-Panel', component: ExpansionPanelComponent },
+  { path: 'Expansion-Panel', component: ExpansionPanelComponent },
   // { path: 'input', component: InputComponent },
   // { path: 'Hstapper', component: HorizontalStepperComponent },
   // { path: 'icon', component: IconComponent },

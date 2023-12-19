@@ -20,6 +20,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 
 /******************** MATERIAL COMPONENTS ********************/
@@ -34,6 +35,7 @@ import { ChipsComponent } from './chips/chips.component';
 import { DatePickerComponent } from './date-picker/date-picker.component';
 import { DialogComponent, AppDialogBox2Component } from './dialog/dialog.component';
 import { DividerComponent } from './divider/divider.component';
+import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 
 
 @NgModule({
@@ -49,7 +51,8 @@ import { DividerComponent } from './divider/divider.component';
     DatePickerComponent,
     DialogComponent,
     AppDialogBox2Component,
-    DividerComponent
+    DividerComponent,
+    ExpansionPanelComponent
   ],
   imports: [
     BrowserModule,
@@ -71,7 +74,8 @@ import { DividerComponent } from './divider/divider.component';
     MatNativeDateModule,
     MatInputModule,
     MatDialogModule,
-    MatDividerModule
+    MatDividerModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
