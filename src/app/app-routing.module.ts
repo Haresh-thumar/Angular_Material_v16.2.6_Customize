@@ -11,6 +11,7 @@ import { DatePickerComponent } from './date-picker/date-picker.component';
 import { DialogComponent } from './dialog/dialog.component';
 import { DividerComponent } from './divider/divider.component';
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
+import { HorizontalStepperComponent } from './horizontal-stepper/horizontal-stepper.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
@@ -24,8 +25,8 @@ const routes: Routes = [
   { path: 'dialog', component: DialogComponent },
   { path: 'divider', component: DividerComponent },
   { path: 'Expansion-Panel', component: ExpansionPanelComponent },
+  { path: 'Hstapper', component: HorizontalStepperComponent },
   // { path: 'input', component: InputComponent },
-  // { path: 'Hstapper', component: HorizontalStepperComponent },
   // { path: 'icon', component: IconComponent },
   // { path: 'list', component: ListComponent },
   // { path: 'menu', component: MenuComponent },

@@ -1,0 +1,214 @@
+ /*-----------------------------------------------------------------------------------------------------------------
+                                            Global Style using Variable
+ -----------------------------------------------------------------------------------------------------------------*/
+ .mat-stepper-horizontal {
+     --mat-stepper-header-icon-foreground-color: rgb(255, 55, 0); // change stepper icon color
+     --mat-stepper-header-selected-state-icon-background-color: #8bff7e; // change stepper header selected state icon background  color
+     --mat-stepper-header-selected-state-icon-foreground-color: #109d00; // change stepper header selected state-icon foreground color
+     --mat-stepper-header-done-state-icon-background-color: #ff0202; // change stepper header done state icon background color
+     --mat-stepper-header-done-state-icon-foreground-color: rgb(253, 194, 1); // change stepper header done state icon foreground color
+     --mat-stepper-header-edit-state-icon-background-color: #970067; // change stepper header edit state icon background color
+     --mat-stepper-header-edit-state-icon-foreground-color: rgb(0, 226, 242); // change stepper header edit state icon foreground color
+     --mat-stepper-container-color: rgb(255, 219, 219); // change stepper container color
+     --mat-stepper-line-color: rgba(255, 4, 4, 0.849); // change stepper line color
+     --mat-stepper-header-hover-state-layer-color: rgba(255, 159, 159, 0.849); // hover to change stepper header state layer color
+     --mat-stepper-header-focus-state-layer-color: rgba(255, 104, 104, 0.849); // focus to change stepper header state layer color
+     --mat-stepper-header-label-text-color: rgba(255, 6, 6, 0.54); // change stepper header label text color
+     --mat-stepper-header-optional-label-text-color: rgba(17, 0, 255, 0.54); // stepper header optional label text color
+     --mat-stepper-header-selected-state-label-text-color: rgba(255, 0, 208, 0.87); // change steppr header selected label text color
+     --mat-stepper-header-icon-background-color: rgba(196, 107, 255, 0.54); // change stepper header icon bnackground color
+     --mat-stepper-header-error-state-label-text-color: #367ff4; // change stepper header error state label text color
+     --mat-stepper-header-error-state-icon-foreground-color: #f600d5; // change stepper header error state icon foreground color
+     --mat-stepper-header-error-state-icon-background-color: #ffa1f2; // change stepper header error state icon background color
+     --mat-stepper-header-height: 60px; // change stepper header height
+     --mat-stepper-container-text-font: Roboto, sans-serif; // change container font-family
+     --mat-stepper-header-label-text-font: Roboto, sans-serif; // change header label text font-family
+     --mat-stepper-header-label-text-size: 16px; // change header font size 
+     --mat-stepper-header-label-text-weight: 500; // change header label font-weight
+     --mat-stepper-header-error-state-label-text-size: 16px; // change header error state label text size
+     --mat-stepper-header-selected-state-label-text-size: 16px; // change header selected state label font-size
+     --mat-stepper-header-selected-state-label-text-weight: 400; // change header selected state label font-weight 
+ }
+
+
+ .mat-stepper-horizontal .mat-step-header.mat-accent {
+     --mat-stepper-header-icon-foreground-color: white;
+     --mat-stepper-header-selected-state-icon-background-color: #ff4081;
+     --mat-stepper-header-selected-state-icon-foreground-color: white;
+     --mat-stepper-header-done-state-icon-background-color: #ff4081;
+     --mat-stepper-header-done-state-icon-foreground-color: white;
+     --mat-stepper-header-edit-state-icon-background-color: #ff4081;
+     --mat-stepper-header-edit-state-icon-foreground-color: white;
+ }
+
+ .mat-stepper-horizontal .mat-step-header.mat-warn {
+     --mat-stepper-header-icon-foreground-color: white;
+     --mat-stepper-header-selected-state-icon-background-color: #f44336;
+     --mat-stepper-header-selected-state-icon-foreground-color: white;
+     --mat-stepper-header-done-state-icon-background-color: #f44336;
+     --mat-stepper-header-done-state-icon-foreground-color: white;
+     --mat-stepper-header-edit-state-icon-background-color: #f44336;
+     --mat-stepper-header-edit-state-icon-foreground-color: white;
+ }
+
+ /*-----------------------------------------------------------------------------------------------------------------
+                                            accent color theme using classes
+ -----------------------------------------------------------------------------------------------------------------*/
+ // Global Stapper Body Style
+ ::ng-deep .mat-horizontal-content-container {
+     padding: 24px !important;
+     background-color: rgb(241, 241, 241);
+     border-radius: 0 0 15px 15px;
+ }
+
+ // Global Stapper Header Steps-Bar Style
+ ::ng-deep .mat-horizontal-stepper-header-container {
+     background: rgb(255, 215, 215);
+     border-left: 2px solid #00c50a;
+     border-top: 2px solid #3b65c0;
+     border-right: 2px solid #00c50a;
+     border-bottom: 2px solid #ff1b1b;
+     padding: 20px 0 20px 0;
+     border-radius: 15px 15px 0 0;
+ }
+
+ // Global Stapper Step Horizontal Line Style
+ ::ng-deep .mat-stepper-horizontal-line {
+     border-top-color: #ff1b1b;
+     border-top-style: dashed !important;
+     border-top-width: 2px !important;
+ }
+
+ // Stapper Step-Box Style
+ ::ng-deep .mat-accent.mat-step-header {
+     background-color: #bdbdbd62;
+     display: block !important;
+     padding: 5px 20px 25px 20px;
+     border-radius: 20px;
+     border: 1px solid rgba(155, 175, 194, 0.377);
+     height: 50px;
+ }
+
+ // Stapper Step-Box Hover Effect
+ ::ng-deep .mat-accent.mat-step-header:hover:not([aria-disabled]),
+ ::ng-deep .mat-accent.mat-step-header:hover[aria-disabled=false] {
+     background-color: rgba(87, 174, 255, 0.74);
+ }
+
+ // Stapper Step-Box Focus Effect
+ ::ng-deep .mat-accent.mat-step-header.cdk-keyboard-focused,
+ ::ng-deep .mat-accent.mat-step-header.cdk-program-focused {
+     background-color: rgba(0, 80, 155, 0.74);
+     color: #ffff;
+ }
+
+ /*------- for outer frame property change when active(seleted) -------*/
+ // Selected Step-Box
+ ::ng-deep .mat-accent.mat-step-header.mat-horizontal-stepper-header {
+     &[ng-reflect-selected="true"].mat-step-header {
+         background-color: rgba(255, 71, 134, 0.25);
+         border: 1px solid #ff4786 !important;
+         backdrop-filter: blur(5px);
+     }
+ }
+
+ /*------- for outer frame property change when deactive(deseleted) -------*/
+ // DeSelected Step Box
+ ::ng-deep .mat-accent.mat-step-header.mat-horizontal-stepper-header {
+     &[ng-reflect-selected="false"].mat-step-header {
+         background-color: rgb(235, 235, 235);
+     }
+ }
+
+
+ // Change Style in Edit Step
+ ::ng-deep .mat-accent.mat-step-header.mat-horizontal-stepper-header:has(.mat-step-icon-state-edit) {
+     background-color: rgba(0, 128, 0, 0.267) !important;
+     border: 1px solid green !important;
+     backdrop-filter: blur(5px);
+ }
+
+ // Change Style in Done Step
+ ::ng-deep .mat-accent.mat-step-header.mat-horizontal-stepper-header:has(.mat-step-icon-state-done) {
+     background-color: rgba(0, 128, 0, 0.267) !important;
+     border: 1px solid green !important;
+     backdrop-filter: blur(5px);
+ }
+
+ // Change Stapper Step Horizontal Line Color & Style
+ ::ng-deep .mat-accent.mat-stepper-horizontal-line {
+     border-top-color: rgba(255, 73, 27, 0.5) !important;
+     border-top-style: dashed !important;
+     border-top-width: 2px !important;
+ }
+
+ // Stapper Step Box Label Style 
+ ::ng-deep .mat-accent.mat-step-header.mat-step-label {
+     font-size: 20px;
+     font-weight: 400;
+     text-align: center;
+ }
+
+
+ // Change Label Color When Tab is Selected
+ ::ng-deep .mat-accent.mat-step-header .mat-step-label-selected {
+     color: #ff4786 !important;
+ }
+
+ // Change Stapper Step-Box active text When Tab is Active
+ ::ng-deep .mat-accent.mat-step-header .mat-step-label.mat-step-label-active {
+     color: #39a805;
+ }
+
+ // Change Stapper Step icons circle
+ ::ng-deep .mat-accent.mat-step-header .mat-step-icon {
+     background-color: #bdbdbd;
+     color: #fff;
+     transition: all 0.5s ease-in-out;
+     margin: auto 7px auto 0;
+     outline: 2px solid #bdbdbd;
+     outline-offset: 1px;
+     margin: 10px auto;
+ }
+
+ // Change Stapper Step selected icons circle
+ ::ng-deep .mat-accent.mat-step-header .mat-step-icon-selected {
+     background-color: #ff4786;
+     color: #fff;
+     outline: 2px solid #ff4786;
+     outline-offset: 2px;
+ }
+
+
+ // Change Stapper Step Edit Icon circle
+ ::ng-deep .mat-accent.mat-step-header .mat-step-icon-state-edit {
+     background-color: #39a805 !important;
+     color: #fff;
+     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/768px-White_check.svg.png");
+     background-size: 13px;
+     background-position-y: 5px;
+     background-position-x: 5px;
+     transform: rotate(20deg);
+     background-repeat: no-repeat;
+     outline: 2px solid #39a805 !important;
+     outline-offset: 2px;
+ }
+
+ // Remove Edit Icon
+ ::ng-deep .stepper-2 .mat-step-icon .mat-icon {
+     display: none;
+ }
+
+ // Change Stapper Step Done Icon circle
+ ::ng-deep .mat-accent.mat-step-header .mat-step-icon-state-done {
+     background-color: #39a805;
+     color: #fff;
+     outline: 2px solid #39a805;
+     outline-offset: 2px;
+     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/768px-White_check.svg.png");
+     background-size: 13px;
+     background-position-y: 5px;
+     background-position-x: 5px;
+     transform: rotate(20deg);
+     background-repeat: no-repeat;
+ }

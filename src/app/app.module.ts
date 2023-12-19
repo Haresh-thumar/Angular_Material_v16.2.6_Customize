@@ -21,6 +21,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatStepperModule } from '@angular/material/stepper';
 
 
 /******************** MATERIAL COMPONENTS ********************/
@@ -36,6 +37,7 @@ import { DatePickerComponent } from './date-picker/date-picker.component';
 import { DialogComponent, AppDialogBox2Component } from './dialog/dialog.component';
 import { DividerComponent } from './divider/divider.component';
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
+import { HorizontalStepperComponent } from './horizontal-stepper/horizontal-stepper.component';
 
 
 @NgModule({
@@ -52,7 +54,8 @@ import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.compo
     DialogComponent,
     AppDialogBox2Component,
     DividerComponent,
-    ExpansionPanelComponent
+    ExpansionPanelComponent,
+    HorizontalStepperComponent
   ],
   imports: [
     BrowserModule,
@@ -75,7 +78,8 @@ import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.compo
     MatInputModule,
     MatDialogModule,
     MatDividerModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
